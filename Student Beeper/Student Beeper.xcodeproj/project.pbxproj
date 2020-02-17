@@ -7,76 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D73185423F357F5005D46C1 /* ContentTabSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73185323F357F5005D46C1 /* ContentTabSelect.swift */; };
-		5D73185623F35882005D46C1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73185523F35882005D46C1 /* Data.swift */; };
-		5D73185823F35995005D46C1 /* ContentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73185723F35995005D46C1 /* ContentRow.swift */; };
-		5D73185A23F35E96005D46C1 /* ContentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D73185923F35E96005D46C1 /* ContentDetail.swift */; };
-		5DE8402323EA627D0062ED76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE8402223EA627D0062ED76 /* AppDelegate.swift */; };
-		5DE8402523EA627D0062ED76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE8402423EA627D0062ED76 /* SceneDelegate.swift */; };
-		5DE8402723EA627D0062ED76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE8402623EA627D0062ED76 /* ContentView.swift */; };
-		5DE8402923EA62820062ED76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DE8402823EA62820062ED76 /* Assets.xcassets */; };
-		5DE8402C23EA62820062ED76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DE8402B23EA62820062ED76 /* Preview Assets.xcassets */; };
-		5DE8402F23EA62820062ED76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DE8402D23EA62820062ED76 /* LaunchScreen.storyboard */; };
-		5DE8403A23EA62820062ED76 /* Student_BeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE8403923EA62820062ED76 /* Student_BeeperTests.swift */; };
-		5DE8404523EA62820062ED76 /* Student_BeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE8404423EA62820062ED76 /* Student_BeeperUITests.swift */; };
-		5DE8405323EA78480062ED76 /* ContentHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE8405223EA78480062ED76 /* ContentHome.swift */; };
+		5D72596123FB39F8003C2F06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72596023FB39F8003C2F06 /* AppDelegate.swift */; };
+		5D72596323FB39F8003C2F06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72596223FB39F8003C2F06 /* SceneDelegate.swift */; };
+		5D72596523FB39F8003C2F06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72596423FB39F8003C2F06 /* ViewController.swift */; };
+		5D72596823FB39F8003C2F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D72596623FB39F8003C2F06 /* Main.storyboard */; };
+		5D72596A23FB39FA003C2F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D72596923FB39FA003C2F06 /* Assets.xcassets */; };
+		5D72596D23FB39FA003C2F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D72596B23FB39FA003C2F06 /* LaunchScreen.storyboard */; };
+		5D72597823FB39FA003C2F06 /* Student_BeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72597723FB39FA003C2F06 /* Student_BeeperTests.swift */; };
+		5D72598323FB39FA003C2F06 /* Student_BeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72598223FB39FA003C2F06 /* Student_BeeperUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5DE8403623EA62820062ED76 /* PBXContainerItemProxy */ = {
+		5D72597423FB39FA003C2F06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5DE8401723EA627D0062ED76 /* Project object */;
+			containerPortal = 5D72595523FB39F8003C2F06 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5DE8401E23EA627D0062ED76;
+			remoteGlobalIDString = 5D72595C23FB39F8003C2F06;
 			remoteInfo = "Student Beeper";
 		};
-		5DE8404123EA62820062ED76 /* PBXContainerItemProxy */ = {
+		5D72597F23FB39FA003C2F06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5DE8401723EA627D0062ED76 /* Project object */;
+			containerPortal = 5D72595523FB39F8003C2F06 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5DE8401E23EA627D0062ED76;
+			remoteGlobalIDString = 5D72595C23FB39F8003C2F06;
 			remoteInfo = "Student Beeper";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D73185323F357F5005D46C1 /* ContentTabSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTabSelect.swift; sourceTree = "<group>"; };
-		5D73185523F35882005D46C1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
-		5D73185723F35995005D46C1 /* ContentRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRow.swift; sourceTree = "<group>"; };
-		5D73185923F35E96005D46C1 /* ContentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetail.swift; sourceTree = "<group>"; };
-		5DE8401F23EA627D0062ED76 /* Student Beeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Beeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DE8402223EA627D0062ED76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DE8402423EA627D0062ED76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5DE8402623EA627D0062ED76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5DE8402823EA62820062ED76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5DE8402B23EA62820062ED76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5DE8402E23EA62820062ED76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5DE8403023EA62820062ED76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DE8403523EA62820062ED76 /* Student BeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student BeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DE8403923EA62820062ED76 /* Student_BeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperTests.swift; sourceTree = "<group>"; };
-		5DE8403B23EA62820062ED76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DE8404023EA62820062ED76 /* Student BeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student BeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DE8404423EA62820062ED76 /* Student_BeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperUITests.swift; sourceTree = "<group>"; };
-		5DE8404623EA62820062ED76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DE8405223EA78480062ED76 /* ContentHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHome.swift; sourceTree = "<group>"; };
+		5D72595D23FB39F8003C2F06 /* Student Beeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Beeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D72596023FB39F8003C2F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D72596223FB39F8003C2F06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5D72596423FB39F8003C2F06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D72596723FB39F8003C2F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D72596923FB39FA003C2F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D72596C23FB39FA003C2F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D72596E23FB39FA003C2F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D72597323FB39FA003C2F06 /* Student BeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student BeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D72597723FB39FA003C2F06 /* Student_BeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperTests.swift; sourceTree = "<group>"; };
+		5D72597923FB39FA003C2F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D72597E23FB39FA003C2F06 /* Student BeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student BeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D72598223FB39FA003C2F06 /* Student_BeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperUITests.swift; sourceTree = "<group>"; };
+		5D72598423FB39FA003C2F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5DE8401C23EA627D0062ED76 /* Frameworks */ = {
+		5D72595A23FB39F8003C2F06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DE8403223EA62820062ED76 /* Frameworks */ = {
+		5D72597023FB39FA003C2F06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DE8403D23EA62820062ED76 /* Frameworks */ = {
+		5D72597B23FB39FA003C2F06 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,67 +76,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5DE8401623EA627D0062ED76 = {
+		5D72595423FB39F8003C2F06 = {
 			isa = PBXGroup;
 			children = (
-				5DE8402123EA627D0062ED76 /* Student Beeper */,
-				5DE8403823EA62820062ED76 /* Student BeeperTests */,
-				5DE8404323EA62820062ED76 /* Student BeeperUITests */,
-				5DE8402023EA627D0062ED76 /* Products */,
+				5D72595F23FB39F8003C2F06 /* Student Beeper */,
+				5D72597623FB39FA003C2F06 /* Student BeeperTests */,
+				5D72598123FB39FA003C2F06 /* Student BeeperUITests */,
+				5D72595E23FB39F8003C2F06 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5DE8402023EA627D0062ED76 /* Products */ = {
+		5D72595E23FB39F8003C2F06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5DE8401F23EA627D0062ED76 /* Student Beeper.app */,
-				5DE8403523EA62820062ED76 /* Student BeeperTests.xctest */,
-				5DE8404023EA62820062ED76 /* Student BeeperUITests.xctest */,
+				5D72595D23FB39F8003C2F06 /* Student Beeper.app */,
+				5D72597323FB39FA003C2F06 /* Student BeeperTests.xctest */,
+				5D72597E23FB39FA003C2F06 /* Student BeeperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5DE8402123EA627D0062ED76 /* Student Beeper */ = {
+		5D72595F23FB39F8003C2F06 /* Student Beeper */ = {
 			isa = PBXGroup;
 			children = (
-				5DE8402223EA627D0062ED76 /* AppDelegate.swift */,
-				5DE8402423EA627D0062ED76 /* SceneDelegate.swift */,
-				5DE8402623EA627D0062ED76 /* ContentView.swift */,
-				5DE8405223EA78480062ED76 /* ContentHome.swift */,
-				5D73185323F357F5005D46C1 /* ContentTabSelect.swift */,
-				5D73185723F35995005D46C1 /* ContentRow.swift */,
-				5D73185923F35E96005D46C1 /* ContentDetail.swift */,
-				5D73185523F35882005D46C1 /* Data.swift */,
-				5DE8402823EA62820062ED76 /* Assets.xcassets */,
-				5DE8402D23EA62820062ED76 /* LaunchScreen.storyboard */,
-				5DE8403023EA62820062ED76 /* Info.plist */,
-				5DE8402A23EA62820062ED76 /* Preview Content */,
+				5D72596023FB39F8003C2F06 /* AppDelegate.swift */,
+				5D72596223FB39F8003C2F06 /* SceneDelegate.swift */,
+				5D72596423FB39F8003C2F06 /* ViewController.swift */,
+				5D72596623FB39F8003C2F06 /* Main.storyboard */,
+				5D72596923FB39FA003C2F06 /* Assets.xcassets */,
+				5D72596B23FB39FA003C2F06 /* LaunchScreen.storyboard */,
+				5D72596E23FB39FA003C2F06 /* Info.plist */,
 			);
 			path = "Student Beeper";
 			sourceTree = "<group>";
 		};
-		5DE8402A23EA62820062ED76 /* Preview Content */ = {
+		5D72597623FB39FA003C2F06 /* Student BeeperTests */ = {
 			isa = PBXGroup;
 			children = (
-				5DE8402B23EA62820062ED76 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		5DE8403823EA62820062ED76 /* Student BeeperTests */ = {
-			isa = PBXGroup;
-			children = (
-				5DE8403923EA62820062ED76 /* Student_BeeperTests.swift */,
-				5DE8403B23EA62820062ED76 /* Info.plist */,
+				5D72597723FB39FA003C2F06 /* Student_BeeperTests.swift */,
+				5D72597923FB39FA003C2F06 /* Info.plist */,
 			);
 			path = "Student BeeperTests";
 			sourceTree = "<group>";
 		};
-		5DE8404323EA62820062ED76 /* Student BeeperUITests */ = {
+		5D72598123FB39FA003C2F06 /* Student BeeperUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5DE8404423EA62820062ED76 /* Student_BeeperUITests.swift */,
-				5DE8404623EA62820062ED76 /* Info.plist */,
+				5D72598223FB39FA003C2F06 /* Student_BeeperUITests.swift */,
+				5D72598423FB39FA003C2F06 /* Info.plist */,
 			);
 			path = "Student BeeperUITests";
 			sourceTree = "<group>";
@@ -154,13 +131,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5DE8401E23EA627D0062ED76 /* Student Beeper */ = {
+		5D72595C23FB39F8003C2F06 /* Student Beeper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DE8404923EA62820062ED76 /* Build configuration list for PBXNativeTarget "Student Beeper" */;
+			buildConfigurationList = 5D72598723FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student Beeper" */;
 			buildPhases = (
-				5DE8401B23EA627D0062ED76 /* Sources */,
-				5DE8401C23EA627D0062ED76 /* Frameworks */,
-				5DE8401D23EA627D0062ED76 /* Resources */,
+				5D72595923FB39F8003C2F06 /* Sources */,
+				5D72595A23FB39F8003C2F06 /* Frameworks */,
+				5D72595B23FB39F8003C2F06 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -168,69 +145,69 @@
 			);
 			name = "Student Beeper";
 			productName = "Student Beeper";
-			productReference = 5DE8401F23EA627D0062ED76 /* Student Beeper.app */;
+			productReference = 5D72595D23FB39F8003C2F06 /* Student Beeper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5DE8403423EA62820062ED76 /* Student BeeperTests */ = {
+		5D72597223FB39FA003C2F06 /* Student BeeperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DE8404C23EA62820062ED76 /* Build configuration list for PBXNativeTarget "Student BeeperTests" */;
+			buildConfigurationList = 5D72598A23FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student BeeperTests" */;
 			buildPhases = (
-				5DE8403123EA62820062ED76 /* Sources */,
-				5DE8403223EA62820062ED76 /* Frameworks */,
-				5DE8403323EA62820062ED76 /* Resources */,
+				5D72596F23FB39FA003C2F06 /* Sources */,
+				5D72597023FB39FA003C2F06 /* Frameworks */,
+				5D72597123FB39FA003C2F06 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5DE8403723EA62820062ED76 /* PBXTargetDependency */,
+				5D72597523FB39FA003C2F06 /* PBXTargetDependency */,
 			);
 			name = "Student BeeperTests";
 			productName = "Student BeeperTests";
-			productReference = 5DE8403523EA62820062ED76 /* Student BeeperTests.xctest */;
+			productReference = 5D72597323FB39FA003C2F06 /* Student BeeperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5DE8403F23EA62820062ED76 /* Student BeeperUITests */ = {
+		5D72597D23FB39FA003C2F06 /* Student BeeperUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5DE8404F23EA62820062ED76 /* Build configuration list for PBXNativeTarget "Student BeeperUITests" */;
+			buildConfigurationList = 5D72598D23FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student BeeperUITests" */;
 			buildPhases = (
-				5DE8403C23EA62820062ED76 /* Sources */,
-				5DE8403D23EA62820062ED76 /* Frameworks */,
-				5DE8403E23EA62820062ED76 /* Resources */,
+				5D72597A23FB39FA003C2F06 /* Sources */,
+				5D72597B23FB39FA003C2F06 /* Frameworks */,
+				5D72597C23FB39FA003C2F06 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5DE8404223EA62820062ED76 /* PBXTargetDependency */,
+				5D72598023FB39FA003C2F06 /* PBXTargetDependency */,
 			);
 			name = "Student BeeperUITests";
 			productName = "Student BeeperUITests";
-			productReference = 5DE8404023EA62820062ED76 /* Student BeeperUITests.xctest */;
+			productReference = 5D72597E23FB39FA003C2F06 /* Student BeeperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5DE8401723EA627D0062ED76 /* Project object */ = {
+		5D72595523FB39F8003C2F06 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Elijah Smith";
 				TargetAttributes = {
-					5DE8401E23EA627D0062ED76 = {
+					5D72595C23FB39F8003C2F06 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
-					5DE8403423EA62820062ED76 = {
+					5D72597223FB39FA003C2F06 = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 5DE8401E23EA627D0062ED76;
+						TestTargetID = 5D72595C23FB39F8003C2F06;
 					};
-					5DE8403F23EA62820062ED76 = {
+					5D72597D23FB39FA003C2F06 = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 5DE8401E23EA627D0062ED76;
+						TestTargetID = 5D72595C23FB39F8003C2F06;
 					};
 				};
 			};
-			buildConfigurationList = 5DE8401A23EA627D0062ED76 /* Build configuration list for PBXProject "Student Beeper" */;
+			buildConfigurationList = 5D72595823FB39F8003C2F06 /* Build configuration list for PBXProject "Student Beeper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,37 +215,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 5DE8401623EA627D0062ED76;
-			productRefGroup = 5DE8402023EA627D0062ED76 /* Products */;
+			mainGroup = 5D72595423FB39F8003C2F06;
+			productRefGroup = 5D72595E23FB39F8003C2F06 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5DE8401E23EA627D0062ED76 /* Student Beeper */,
-				5DE8403423EA62820062ED76 /* Student BeeperTests */,
-				5DE8403F23EA62820062ED76 /* Student BeeperUITests */,
+				5D72595C23FB39F8003C2F06 /* Student Beeper */,
+				5D72597223FB39FA003C2F06 /* Student BeeperTests */,
+				5D72597D23FB39FA003C2F06 /* Student BeeperUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5DE8401D23EA627D0062ED76 /* Resources */ = {
+		5D72595B23FB39F8003C2F06 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE8402F23EA62820062ED76 /* LaunchScreen.storyboard in Resources */,
-				5DE8402C23EA62820062ED76 /* Preview Assets.xcassets in Resources */,
-				5DE8402923EA62820062ED76 /* Assets.xcassets in Resources */,
+				5D72596D23FB39FA003C2F06 /* LaunchScreen.storyboard in Resources */,
+				5D72596A23FB39FA003C2F06 /* Assets.xcassets in Resources */,
+				5D72596823FB39F8003C2F06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DE8403323EA62820062ED76 /* Resources */ = {
+		5D72597123FB39FA003C2F06 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DE8403E23EA62820062ED76 /* Resources */ = {
+		5D72597C23FB39FA003C2F06 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -278,57 +255,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5DE8401B23EA627D0062ED76 /* Sources */ = {
+		5D72595923FB39F8003C2F06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE8405323EA78480062ED76 /* ContentHome.swift in Sources */,
-				5D73185623F35882005D46C1 /* Data.swift in Sources */,
-				5DE8402323EA627D0062ED76 /* AppDelegate.swift in Sources */,
-				5DE8402523EA627D0062ED76 /* SceneDelegate.swift in Sources */,
-				5D73185A23F35E96005D46C1 /* ContentDetail.swift in Sources */,
-				5DE8402723EA627D0062ED76 /* ContentView.swift in Sources */,
-				5D73185823F35995005D46C1 /* ContentRow.swift in Sources */,
-				5D73185423F357F5005D46C1 /* ContentTabSelect.swift in Sources */,
+				5D72596523FB39F8003C2F06 /* ViewController.swift in Sources */,
+				5D72596123FB39F8003C2F06 /* AppDelegate.swift in Sources */,
+				5D72596323FB39F8003C2F06 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DE8403123EA62820062ED76 /* Sources */ = {
+		5D72596F23FB39FA003C2F06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE8403A23EA62820062ED76 /* Student_BeeperTests.swift in Sources */,
+				5D72597823FB39FA003C2F06 /* Student_BeeperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5DE8403C23EA62820062ED76 /* Sources */ = {
+		5D72597A23FB39FA003C2F06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DE8404523EA62820062ED76 /* Student_BeeperUITests.swift in Sources */,
+				5D72598323FB39FA003C2F06 /* Student_BeeperUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5DE8403723EA62820062ED76 /* PBXTargetDependency */ = {
+		5D72597523FB39FA003C2F06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5DE8401E23EA627D0062ED76 /* Student Beeper */;
-			targetProxy = 5DE8403623EA62820062ED76 /* PBXContainerItemProxy */;
+			target = 5D72595C23FB39F8003C2F06 /* Student Beeper */;
+			targetProxy = 5D72597423FB39FA003C2F06 /* PBXContainerItemProxy */;
 		};
-		5DE8404223EA62820062ED76 /* PBXTargetDependency */ = {
+		5D72598023FB39FA003C2F06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5DE8401E23EA627D0062ED76 /* Student Beeper */;
-			targetProxy = 5DE8404123EA62820062ED76 /* PBXContainerItemProxy */;
+			target = 5D72595C23FB39F8003C2F06 /* Student Beeper */;
+			targetProxy = 5D72597F23FB39FA003C2F06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5DE8402D23EA62820062ED76 /* LaunchScreen.storyboard */ = {
+		5D72596623FB39F8003C2F06 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5DE8402E23EA62820062ED76 /* Base */,
+				5D72596723FB39F8003C2F06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5D72596B23FB39FA003C2F06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D72596C23FB39FA003C2F06 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -336,7 +316,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5DE8404723EA62820062ED76 /* Debug */ = {
+		5D72598523FB39FA003C2F06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -396,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		5DE8404823EA62820062ED76 /* Release */ = {
+		5D72598623FB39FA003C2F06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -450,14 +430,12 @@
 			};
 			name = Release;
 		};
-		5DE8404A23EA62820062ED76 /* Debug */ = {
+		5D72598823FB39FA003C2F06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Student Beeper/Preview Content\"";
 				DEVELOPMENT_TEAM = B8DJ3J46AU;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Student Beeper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,14 +448,12 @@
 			};
 			name = Debug;
 		};
-		5DE8404B23EA62820062ED76 /* Release */ = {
+		5D72598923FB39FA003C2F06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Student Beeper/Preview Content\"";
 				DEVELOPMENT_TEAM = B8DJ3J46AU;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Student Beeper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -490,7 +466,7 @@
 			};
 			name = Release;
 		};
-		5DE8404D23EA62820062ED76 /* Debug */ = {
+		5D72598B23FB39FA003C2F06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -512,7 +488,7 @@
 			};
 			name = Debug;
 		};
-		5DE8404E23EA62820062ED76 /* Release */ = {
+		5D72598C23FB39FA003C2F06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -534,7 +510,7 @@
 			};
 			name = Release;
 		};
-		5DE8405023EA62820062ED76 /* Debug */ = {
+		5D72598E23FB39FA003C2F06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -554,7 +530,7 @@
 			};
 			name = Debug;
 		};
-		5DE8405123EA62820062ED76 /* Release */ = {
+		5D72598F23FB39FA003C2F06 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -577,43 +553,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5DE8401A23EA627D0062ED76 /* Build configuration list for PBXProject "Student Beeper" */ = {
+		5D72595823FB39F8003C2F06 /* Build configuration list for PBXProject "Student Beeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DE8404723EA62820062ED76 /* Debug */,
-				5DE8404823EA62820062ED76 /* Release */,
+				5D72598523FB39FA003C2F06 /* Debug */,
+				5D72598623FB39FA003C2F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DE8404923EA62820062ED76 /* Build configuration list for PBXNativeTarget "Student Beeper" */ = {
+		5D72598723FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student Beeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DE8404A23EA62820062ED76 /* Debug */,
-				5DE8404B23EA62820062ED76 /* Release */,
+				5D72598823FB39FA003C2F06 /* Debug */,
+				5D72598923FB39FA003C2F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DE8404C23EA62820062ED76 /* Build configuration list for PBXNativeTarget "Student BeeperTests" */ = {
+		5D72598A23FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student BeeperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DE8404D23EA62820062ED76 /* Debug */,
-				5DE8404E23EA62820062ED76 /* Release */,
+				5D72598B23FB39FA003C2F06 /* Debug */,
+				5D72598C23FB39FA003C2F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5DE8404F23EA62820062ED76 /* Build configuration list for PBXNativeTarget "Student BeeperUITests" */ = {
+		5D72598D23FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student BeeperUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5DE8405023EA62820062ED76 /* Debug */,
-				5DE8405123EA62820062ED76 /* Release */,
+				5D72598E23FB39FA003C2F06 /* Debug */,
+				5D72598F23FB39FA003C2F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5DE8401723EA627D0062ED76 /* Project object */;
+	rootObject = 5D72595523FB39F8003C2F06 /* Project object */;
 }
