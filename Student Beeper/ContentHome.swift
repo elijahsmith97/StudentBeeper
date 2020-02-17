@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentHome: View {
     var body: some View {
         HStack {
-            Image("wheel").resizable().frame(width: 80, height: 60)
+            Image("wheel3").resizable().frame(width: 75, height: 60)
                 .clipShape(Circle())
             VStack(alignment: .leading) {
                 Text("Student Beeper")
