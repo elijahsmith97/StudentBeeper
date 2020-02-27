@@ -3,141 +3,217 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D72596123FB39F8003C2F06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72596023FB39F8003C2F06 /* AppDelegate.swift */; };
-		5D72596323FB39F8003C2F06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72596223FB39F8003C2F06 /* SceneDelegate.swift */; };
-		5D72596523FB39F8003C2F06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72596423FB39F8003C2F06 /* ViewController.swift */; };
-		5D72596823FB39F8003C2F06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D72596623FB39F8003C2F06 /* Main.storyboard */; };
-		5D72596A23FB39FA003C2F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D72596923FB39FA003C2F06 /* Assets.xcassets */; };
-		5D72596D23FB39FA003C2F06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D72596B23FB39FA003C2F06 /* LaunchScreen.storyboard */; };
-		5D72597823FB39FA003C2F06 /* Student_BeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72597723FB39FA003C2F06 /* Student_BeeperTests.swift */; };
-		5D72598323FB39FA003C2F06 /* Student_BeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D72598223FB39FA003C2F06 /* Student_BeeperUITests.swift */; };
+		0D671C7D662215BEBBD791C5 /* Pods_Student_Beeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C382D3796A684FF73AF429 /* Pods_Student_Beeper.framework */; };
+		2511FDD507CEE4FEF21B12CE /* Pods_Student_BeeperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F187100FBE6228AD4D694D /* Pods_Student_BeeperTests.framework */; };
+		5D0CAF2E2405FA660026AE07 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0CAF2D2405FA660026AE07 /* Utilities.swift */; };
+		5D30D45F23FB456E0023AFE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */; };
+		5D30D46123FB456E0023AFE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D46023FB456E0023AFE0 /* SceneDelegate.swift */; };
+		5D30D46323FB456E0023AFE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D46223FB456E0023AFE0 /* ViewController.swift */; };
+		5D30D46623FB456E0023AFE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D30D46423FB456E0023AFE0 /* Main.storyboard */; };
+		5D30D46823FB456E0023AFE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D30D46723FB456E0023AFE0 /* Assets.xcassets */; };
+		5D30D46B23FB456E0023AFE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D30D46923FB456E0023AFE0 /* LaunchScreen.storyboard */; };
+		5D30D47623FB456F0023AFE0 /* Student_BeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D47523FB456F0023AFE0 /* Student_BeeperTests.swift */; };
+		5D30D48123FB456F0023AFE0 /* Student_BeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D48023FB456F0023AFE0 /* Student_BeeperUITests.swift */; };
+		5D30D49123FB49C90023AFE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D30D49023FB49C90023AFE0 /* GoogleService-Info.plist */; };
+		5DC8ADAD240476D600C0D559 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8ADAC240476D600C0D559 /* RegisterViewController.swift */; };
+		5DC8ADAF240476FA00C0D559 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8ADAE240476FA00C0D559 /* HomeViewController.swift */; };
+		5DC8ADB12404770600C0D559 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8ADB02404770500C0D559 /* LoginViewController.swift */; };
+		5DF824662407374300421661 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF824652407374300421661 /* Constants.swift */; };
+		FBA6955F273A7E11A2E73CD6 /* Pods_Student_Beeper_Student_BeeperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC862BE32FCC6C7FD3C106 /* Pods_Student_Beeper_Student_BeeperUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D72597423FB39FA003C2F06 /* PBXContainerItemProxy */ = {
+		5D30D47223FB456F0023AFE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D72595523FB39F8003C2F06 /* Project object */;
+			containerPortal = 5D30D45323FB456E0023AFE0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D72595C23FB39F8003C2F06;
+			remoteGlobalIDString = 5D30D45A23FB456E0023AFE0;
 			remoteInfo = "Student Beeper";
 		};
-		5D72597F23FB39FA003C2F06 /* PBXContainerItemProxy */ = {
+		5D30D47D23FB456F0023AFE0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D72595523FB39F8003C2F06 /* Project object */;
+			containerPortal = 5D30D45323FB456E0023AFE0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D72595C23FB39F8003C2F06;
+			remoteGlobalIDString = 5D30D45A23FB456E0023AFE0;
 			remoteInfo = "Student Beeper";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D72595D23FB39F8003C2F06 /* Student Beeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Beeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D72596023FB39F8003C2F06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D72596223FB39F8003C2F06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5D72596423FB39F8003C2F06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D72596723FB39F8003C2F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5D72596923FB39FA003C2F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5D72596C23FB39FA003C2F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5D72596E23FB39FA003C2F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D72597323FB39FA003C2F06 /* Student BeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student BeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D72597723FB39FA003C2F06 /* Student_BeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperTests.swift; sourceTree = "<group>"; };
-		5D72597923FB39FA003C2F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D72597E23FB39FA003C2F06 /* Student BeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student BeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D72598223FB39FA003C2F06 /* Student_BeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperUITests.swift; sourceTree = "<group>"; };
-		5D72598423FB39FA003C2F06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02C382D3796A684FF73AF429 /* Pods_Student_Beeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Student_Beeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		047D51A1E83E0FE828035830 /* Pods-Student BeeperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Student BeeperTests.release.xcconfig"; path = "Target Support Files/Pods-Student BeeperTests/Pods-Student BeeperTests.release.xcconfig"; sourceTree = "<group>"; };
+		1212B66180DF85B34AA6321E /* Pods-Student Beeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Student Beeper.release.xcconfig"; path = "Target Support Files/Pods-Student Beeper/Pods-Student Beeper.release.xcconfig"; sourceTree = "<group>"; };
+		36F187100FBE6228AD4D694D /* Pods_Student_BeeperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Student_BeeperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F8A60AABC475F5B42E5DA7 /* Pods-Student BeeperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Student BeeperTests.debug.xcconfig"; path = "Target Support Files/Pods-Student BeeperTests/Pods-Student BeeperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D0CAF2D2405FA660026AE07 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5D30D45B23FB456E0023AFE0 /* Student Beeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Beeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D30D46023FB456E0023AFE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5D30D46223FB456E0023AFE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D30D46523FB456E0023AFE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D30D46723FB456E0023AFE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D30D46A23FB456E0023AFE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D30D46C23FB456E0023AFE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D30D47123FB456F0023AFE0 /* Student BeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student BeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D30D47523FB456F0023AFE0 /* Student_BeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperTests.swift; sourceTree = "<group>"; };
+		5D30D47723FB456F0023AFE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D30D47C23FB456F0023AFE0 /* Student BeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Student BeeperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D30D48023FB456F0023AFE0 /* Student_BeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperUITests.swift; sourceTree = "<group>"; };
+		5D30D48223FB456F0023AFE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D30D49023FB49C90023AFE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5DC8ADAC240476D600C0D559 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5DC8ADAE240476FA00C0D559 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5DC8ADB02404770500C0D559 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "/Users/elijahsmith/Desktop/Classes/Capstone/Project/Student Beeper/Student Beeper/Student Beeper/LoginViewController.swift"; sourceTree = "<absolute>"; };
+		5DF824652407374300421661 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5FC862BE32FCC6C7FD3C106 /* Pods_Student_Beeper_Student_BeeperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Student_Beeper_Student_BeeperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF54CA7CB77353814D6581A4 /* Pods-Student Beeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Student Beeper.debug.xcconfig"; path = "Target Support Files/Pods-Student Beeper/Pods-Student Beeper.debug.xcconfig"; sourceTree = "<group>"; };
+		E42524E7EE691F0E68083A1C /* Pods-Student Beeper-Student BeeperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Student Beeper-Student BeeperUITests.debug.xcconfig"; path = "Target Support Files/Pods-Student Beeper-Student BeeperUITests/Pods-Student Beeper-Student BeeperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E98F15167374A16E747DF993 /* Pods-Student Beeper-Student BeeperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Student Beeper-Student BeeperUITests.release.xcconfig"; path = "Target Support Files/Pods-Student Beeper-Student BeeperUITests/Pods-Student Beeper-Student BeeperUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5D72595A23FB39F8003C2F06 /* Frameworks */ = {
+		5D30D45823FB456E0023AFE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D671C7D662215BEBBD791C5 /* Pods_Student_Beeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D72597023FB39FA003C2F06 /* Frameworks */ = {
+		5D30D46E23FB456F0023AFE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2511FDD507CEE4FEF21B12CE /* Pods_Student_BeeperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D72597B23FB39FA003C2F06 /* Frameworks */ = {
+		5D30D47923FB456F0023AFE0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBA6955F273A7E11A2E73CD6 /* Pods_Student_Beeper_Student_BeeperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D72595423FB39F8003C2F06 = {
+		5D0CAF2C2405F9F50026AE07 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				5D72595F23FB39F8003C2F06 /* Student Beeper */,
-				5D72597623FB39FA003C2F06 /* Student BeeperTests */,
-				5D72598123FB39FA003C2F06 /* Student BeeperUITests */,
-				5D72595E23FB39F8003C2F06 /* Products */,
+				5D0CAF2D2405FA660026AE07 /* Utilities.swift */,
+				5DF824652407374300421661 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5D30D45223FB456E0023AFE0 = {
+			isa = PBXGroup;
+			children = (
+				5D0CAF2C2405F9F50026AE07 /* Helpers */,
+				5D30D45D23FB456E0023AFE0 /* Student Beeper */,
+				5D30D47423FB456F0023AFE0 /* Student BeeperTests */,
+				5D30D47F23FB456F0023AFE0 /* Student BeeperUITests */,
+				5D30D45C23FB456E0023AFE0 /* Products */,
+				C156372C160F3B30FC6C10AD /* Pods */,
+				A226D44BB3B22F03800E2A02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		5D72595E23FB39F8003C2F06 /* Products */ = {
+		5D30D45C23FB456E0023AFE0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D72595D23FB39F8003C2F06 /* Student Beeper.app */,
-				5D72597323FB39FA003C2F06 /* Student BeeperTests.xctest */,
-				5D72597E23FB39FA003C2F06 /* Student BeeperUITests.xctest */,
+				5D30D45B23FB456E0023AFE0 /* Student Beeper.app */,
+				5D30D47123FB456F0023AFE0 /* Student BeeperTests.xctest */,
+				5D30D47C23FB456F0023AFE0 /* Student BeeperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D72595F23FB39F8003C2F06 /* Student Beeper */ = {
+		5D30D45D23FB456E0023AFE0 /* Student Beeper */ = {
 			isa = PBXGroup;
 			children = (
-				5D72596023FB39F8003C2F06 /* AppDelegate.swift */,
-				5D72596223FB39F8003C2F06 /* SceneDelegate.swift */,
-				5D72596423FB39F8003C2F06 /* ViewController.swift */,
-				5D72596623FB39F8003C2F06 /* Main.storyboard */,
-				5D72596923FB39FA003C2F06 /* Assets.xcassets */,
-				5D72596B23FB39FA003C2F06 /* LaunchScreen.storyboard */,
-				5D72596E23FB39FA003C2F06 /* Info.plist */,
+				5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */,
+				5D30D46023FB456E0023AFE0 /* SceneDelegate.swift */,
+				5DC8ADB22404772800C0D559 /* ViewControllers */,
+				5D30D46423FB456E0023AFE0 /* Main.storyboard */,
+				5D30D46723FB456E0023AFE0 /* Assets.xcassets */,
+				5D30D46923FB456E0023AFE0 /* LaunchScreen.storyboard */,
+				5D30D46C23FB456E0023AFE0 /* Info.plist */,
+				5D30D49023FB49C90023AFE0 /* GoogleService-Info.plist */,
 			);
 			path = "Student Beeper";
 			sourceTree = "<group>";
 		};
-		5D72597623FB39FA003C2F06 /* Student BeeperTests */ = {
+		5D30D47423FB456F0023AFE0 /* Student BeeperTests */ = {
 			isa = PBXGroup;
 			children = (
-				5D72597723FB39FA003C2F06 /* Student_BeeperTests.swift */,
-				5D72597923FB39FA003C2F06 /* Info.plist */,
+				5D30D47523FB456F0023AFE0 /* Student_BeeperTests.swift */,
+				5D30D47723FB456F0023AFE0 /* Info.plist */,
 			);
 			path = "Student BeeperTests";
 			sourceTree = "<group>";
 		};
-		5D72598123FB39FA003C2F06 /* Student BeeperUITests */ = {
+		5D30D47F23FB456F0023AFE0 /* Student BeeperUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5D72598223FB39FA003C2F06 /* Student_BeeperUITests.swift */,
-				5D72598423FB39FA003C2F06 /* Info.plist */,
+				5D30D48023FB456F0023AFE0 /* Student_BeeperUITests.swift */,
+				5D30D48223FB456F0023AFE0 /* Info.plist */,
 			);
 			path = "Student BeeperUITests";
+			sourceTree = "<group>";
+		};
+		5DC8ADB22404772800C0D559 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5DC8ADB02404770500C0D559 /* LoginViewController.swift */,
+				5DC8ADAC240476D600C0D559 /* RegisterViewController.swift */,
+				5DC8ADAE240476FA00C0D559 /* HomeViewController.swift */,
+				5D30D46223FB456E0023AFE0 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A226D44BB3B22F03800E2A02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02C382D3796A684FF73AF429 /* Pods_Student_Beeper.framework */,
+				A5FC862BE32FCC6C7FD3C106 /* Pods_Student_Beeper_Student_BeeperUITests.framework */,
+				36F187100FBE6228AD4D694D /* Pods_Student_BeeperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C156372C160F3B30FC6C10AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF54CA7CB77353814D6581A4 /* Pods-Student Beeper.debug.xcconfig */,
+				1212B66180DF85B34AA6321E /* Pods-Student Beeper.release.xcconfig */,
+				E42524E7EE691F0E68083A1C /* Pods-Student Beeper-Student BeeperUITests.debug.xcconfig */,
+				E98F15167374A16E747DF993 /* Pods-Student Beeper-Student BeeperUITests.release.xcconfig */,
+				46F8A60AABC475F5B42E5DA7 /* Pods-Student BeeperTests.debug.xcconfig */,
+				047D51A1E83E0FE828035830 /* Pods-Student BeeperTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D72595C23FB39F8003C2F06 /* Student Beeper */ = {
+		5D30D45A23FB456E0023AFE0 /* Student Beeper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D72598723FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student Beeper" */;
+			buildConfigurationList = 5D30D48523FB456F0023AFE0 /* Build configuration list for PBXNativeTarget "Student Beeper" */;
 			buildPhases = (
-				5D72595923FB39F8003C2F06 /* Sources */,
-				5D72595A23FB39F8003C2F06 /* Frameworks */,
-				5D72595B23FB39F8003C2F06 /* Resources */,
+				05697FA1539FFF07B00EBFA3 /* [CP] Check Pods Manifest.lock */,
+				5D30D45723FB456E0023AFE0 /* Sources */,
+				5D30D45823FB456E0023AFE0 /* Frameworks */,
+				5D30D45923FB456E0023AFE0 /* Resources */,
+				50224B98A42FEA9888D9D264 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,69 +221,72 @@
 			);
 			name = "Student Beeper";
 			productName = "Student Beeper";
-			productReference = 5D72595D23FB39F8003C2F06 /* Student Beeper.app */;
+			productReference = 5D30D45B23FB456E0023AFE0 /* Student Beeper.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5D72597223FB39FA003C2F06 /* Student BeeperTests */ = {
+		5D30D47023FB456F0023AFE0 /* Student BeeperTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D72598A23FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student BeeperTests" */;
+			buildConfigurationList = 5D30D48823FB456F0023AFE0 /* Build configuration list for PBXNativeTarget "Student BeeperTests" */;
 			buildPhases = (
-				5D72596F23FB39FA003C2F06 /* Sources */,
-				5D72597023FB39FA003C2F06 /* Frameworks */,
-				5D72597123FB39FA003C2F06 /* Resources */,
+				E9097F00A7E8FB8B8544FB3C /* [CP] Check Pods Manifest.lock */,
+				5D30D46D23FB456F0023AFE0 /* Sources */,
+				5D30D46E23FB456F0023AFE0 /* Frameworks */,
+				5D30D46F23FB456F0023AFE0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D72597523FB39FA003C2F06 /* PBXTargetDependency */,
+				5D30D47323FB456F0023AFE0 /* PBXTargetDependency */,
 			);
 			name = "Student BeeperTests";
 			productName = "Student BeeperTests";
-			productReference = 5D72597323FB39FA003C2F06 /* Student BeeperTests.xctest */;
+			productReference = 5D30D47123FB456F0023AFE0 /* Student BeeperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5D72597D23FB39FA003C2F06 /* Student BeeperUITests */ = {
+		5D30D47B23FB456F0023AFE0 /* Student BeeperUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D72598D23FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student BeeperUITests" */;
+			buildConfigurationList = 5D30D48B23FB456F0023AFE0 /* Build configuration list for PBXNativeTarget "Student BeeperUITests" */;
 			buildPhases = (
-				5D72597A23FB39FA003C2F06 /* Sources */,
-				5D72597B23FB39FA003C2F06 /* Frameworks */,
-				5D72597C23FB39FA003C2F06 /* Resources */,
+				7F99C00FBDA675CBED1C0BFF /* [CP] Check Pods Manifest.lock */,
+				5D30D47823FB456F0023AFE0 /* Sources */,
+				5D30D47923FB456F0023AFE0 /* Frameworks */,
+				5D30D47A23FB456F0023AFE0 /* Resources */,
+				9D6DEA3DCE65EE758C81B2AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D72598023FB39FA003C2F06 /* PBXTargetDependency */,
+				5D30D47E23FB456F0023AFE0 /* PBXTargetDependency */,
 			);
 			name = "Student BeeperUITests";
 			productName = "Student BeeperUITests";
-			productReference = 5D72597E23FB39FA003C2F06 /* Student BeeperUITests.xctest */;
+			productReference = 5D30D47C23FB456F0023AFE0 /* Student BeeperUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5D72595523FB39F8003C2F06 /* Project object */ = {
+		5D30D45323FB456E0023AFE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Elijah Smith";
 				TargetAttributes = {
-					5D72595C23FB39F8003C2F06 = {
+					5D30D45A23FB456E0023AFE0 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
-					5D72597223FB39FA003C2F06 = {
+					5D30D47023FB456F0023AFE0 = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 5D72595C23FB39F8003C2F06;
+						TestTargetID = 5D30D45A23FB456E0023AFE0;
 					};
-					5D72597D23FB39FA003C2F06 = {
+					5D30D47B23FB456F0023AFE0 = {
 						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = 5D72595C23FB39F8003C2F06;
+						TestTargetID = 5D30D45A23FB456E0023AFE0;
 					};
 				};
 			};
-			buildConfigurationList = 5D72595823FB39F8003C2F06 /* Build configuration list for PBXProject "Student Beeper" */;
+			buildConfigurationList = 5D30D45623FB456E0023AFE0 /* Build configuration list for PBXProject "Student Beeper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,37 +294,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 5D72595423FB39F8003C2F06;
-			productRefGroup = 5D72595E23FB39F8003C2F06 /* Products */;
+			mainGroup = 5D30D45223FB456E0023AFE0;
+			productRefGroup = 5D30D45C23FB456E0023AFE0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D72595C23FB39F8003C2F06 /* Student Beeper */,
-				5D72597223FB39FA003C2F06 /* Student BeeperTests */,
-				5D72597D23FB39FA003C2F06 /* Student BeeperUITests */,
+				5D30D45A23FB456E0023AFE0 /* Student Beeper */,
+				5D30D47023FB456F0023AFE0 /* Student BeeperTests */,
+				5D30D47B23FB456F0023AFE0 /* Student BeeperUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5D72595B23FB39F8003C2F06 /* Resources */ = {
+		5D30D45923FB456E0023AFE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D72596D23FB39FA003C2F06 /* LaunchScreen.storyboard in Resources */,
-				5D72596A23FB39FA003C2F06 /* Assets.xcassets in Resources */,
-				5D72596823FB39F8003C2F06 /* Main.storyboard in Resources */,
+				5D30D46B23FB456E0023AFE0 /* LaunchScreen.storyboard in Resources */,
+				5D30D49123FB49C90023AFE0 /* GoogleService-Info.plist in Resources */,
+				5D30D46823FB456E0023AFE0 /* Assets.xcassets in Resources */,
+				5D30D46623FB456E0023AFE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D72597123FB39FA003C2F06 /* Resources */ = {
+		5D30D46F23FB456F0023AFE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D72597C23FB39FA003C2F06 /* Resources */ = {
+		5D30D47A23FB456F0023AFE0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -254,61 +334,169 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05697FA1539FFF07B00EBFA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Student Beeper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50224B98A42FEA9888D9D264 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Student Beeper/Pods-Student Beeper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Student Beeper/Pods-Student Beeper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Student Beeper/Pods-Student Beeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F99C00FBDA675CBED1C0BFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Student Beeper-Student BeeperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6DEA3DCE65EE758C81B2AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Student Beeper-Student BeeperUITests/Pods-Student Beeper-Student BeeperUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Student Beeper-Student BeeperUITests/Pods-Student Beeper-Student BeeperUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Student Beeper-Student BeeperUITests/Pods-Student Beeper-Student BeeperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9097F00A7E8FB8B8544FB3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Student BeeperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		5D72595923FB39F8003C2F06 /* Sources */ = {
+		5D30D45723FB456E0023AFE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D72596523FB39F8003C2F06 /* ViewController.swift in Sources */,
-				5D72596123FB39F8003C2F06 /* AppDelegate.swift in Sources */,
-				5D72596323FB39F8003C2F06 /* SceneDelegate.swift in Sources */,
+				5DC8ADB12404770600C0D559 /* LoginViewController.swift in Sources */,
+				5DC8ADAF240476FA00C0D559 /* HomeViewController.swift in Sources */,
+				5D0CAF2E2405FA660026AE07 /* Utilities.swift in Sources */,
+				5D30D46323FB456E0023AFE0 /* ViewController.swift in Sources */,
+				5D30D45F23FB456E0023AFE0 /* AppDelegate.swift in Sources */,
+				5D30D46123FB456E0023AFE0 /* SceneDelegate.swift in Sources */,
+				5DC8ADAD240476D600C0D559 /* RegisterViewController.swift in Sources */,
+				5DF824662407374300421661 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D72596F23FB39FA003C2F06 /* Sources */ = {
+		5D30D46D23FB456F0023AFE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D72597823FB39FA003C2F06 /* Student_BeeperTests.swift in Sources */,
+				5D30D47623FB456F0023AFE0 /* Student_BeeperTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D72597A23FB39FA003C2F06 /* Sources */ = {
+		5D30D47823FB456F0023AFE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D72598323FB39FA003C2F06 /* Student_BeeperUITests.swift in Sources */,
+				5D30D48123FB456F0023AFE0 /* Student_BeeperUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D72597523FB39FA003C2F06 /* PBXTargetDependency */ = {
+		5D30D47323FB456F0023AFE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D72595C23FB39F8003C2F06 /* Student Beeper */;
-			targetProxy = 5D72597423FB39FA003C2F06 /* PBXContainerItemProxy */;
+			target = 5D30D45A23FB456E0023AFE0 /* Student Beeper */;
+			targetProxy = 5D30D47223FB456F0023AFE0 /* PBXContainerItemProxy */;
 		};
-		5D72598023FB39FA003C2F06 /* PBXTargetDependency */ = {
+		5D30D47E23FB456F0023AFE0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D72595C23FB39F8003C2F06 /* Student Beeper */;
-			targetProxy = 5D72597F23FB39FA003C2F06 /* PBXContainerItemProxy */;
+			target = 5D30D45A23FB456E0023AFE0 /* Student Beeper */;
+			targetProxy = 5D30D47D23FB456F0023AFE0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D72596623FB39F8003C2F06 /* Main.storyboard */ = {
+		5D30D46423FB456E0023AFE0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D72596723FB39F8003C2F06 /* Base */,
+				5D30D46523FB456E0023AFE0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5D72596B23FB39FA003C2F06 /* LaunchScreen.storyboard */ = {
+		5D30D46923FB456E0023AFE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D72596C23FB39FA003C2F06 /* Base */,
+				5D30D46A23FB456E0023AFE0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +504,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5D72598523FB39FA003C2F06 /* Debug */ = {
+		5D30D48323FB456F0023AFE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,7 +564,7 @@
 			};
 			name = Debug;
 		};
-		5D72598623FB39FA003C2F06 /* Release */ = {
+		5D30D48423FB456F0023AFE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -430,8 +618,9 @@
 			};
 			name = Release;
 		};
-		5D72598823FB39FA003C2F06 /* Debug */ = {
+		5D30D48623FB456F0023AFE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF54CA7CB77353814D6581A4 /* Pods-Student Beeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,8 +637,9 @@
 			};
 			name = Debug;
 		};
-		5D72598923FB39FA003C2F06 /* Release */ = {
+		5D30D48723FB456F0023AFE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1212B66180DF85B34AA6321E /* Pods-Student Beeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,8 +656,9 @@
 			};
 			name = Release;
 		};
-		5D72598B23FB39FA003C2F06 /* Debug */ = {
+		5D30D48923FB456F0023AFE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46F8A60AABC475F5B42E5DA7 /* Pods-Student BeeperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,8 +679,9 @@
 			};
 			name = Debug;
 		};
-		5D72598C23FB39FA003C2F06 /* Release */ = {
+		5D30D48A23FB456F0023AFE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047D51A1E83E0FE828035830 /* Pods-Student BeeperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,8 +702,9 @@
 			};
 			name = Release;
 		};
-		5D72598E23FB39FA003C2F06 /* Debug */ = {
+		5D30D48C23FB456F0023AFE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42524E7EE691F0E68083A1C /* Pods-Student Beeper-Student BeeperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,8 +723,9 @@
 			};
 			name = Debug;
 		};
-		5D72598F23FB39FA003C2F06 /* Release */ = {
+		5D30D48D23FB456F0023AFE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E98F15167374A16E747DF993 /* Pods-Student Beeper-Student BeeperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -553,43 +747,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D72595823FB39F8003C2F06 /* Build configuration list for PBXProject "Student Beeper" */ = {
+		5D30D45623FB456E0023AFE0 /* Build configuration list for PBXProject "Student Beeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D72598523FB39FA003C2F06 /* Debug */,
-				5D72598623FB39FA003C2F06 /* Release */,
+				5D30D48323FB456F0023AFE0 /* Debug */,
+				5D30D48423FB456F0023AFE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D72598723FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student Beeper" */ = {
+		5D30D48523FB456F0023AFE0 /* Build configuration list for PBXNativeTarget "Student Beeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D72598823FB39FA003C2F06 /* Debug */,
-				5D72598923FB39FA003C2F06 /* Release */,
+				5D30D48623FB456F0023AFE0 /* Debug */,
+				5D30D48723FB456F0023AFE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D72598A23FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student BeeperTests" */ = {
+		5D30D48823FB456F0023AFE0 /* Build configuration list for PBXNativeTarget "Student BeeperTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D72598B23FB39FA003C2F06 /* Debug */,
-				5D72598C23FB39FA003C2F06 /* Release */,
+				5D30D48923FB456F0023AFE0 /* Debug */,
+				5D30D48A23FB456F0023AFE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D72598D23FB39FA003C2F06 /* Build configuration list for PBXNativeTarget "Student BeeperUITests" */ = {
+		5D30D48B23FB456F0023AFE0 /* Build configuration list for PBXNativeTarget "Student BeeperUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D72598E23FB39FA003C2F06 /* Debug */,
-				5D72598F23FB39FA003C2F06 /* Release */,
+				5D30D48C23FB456F0023AFE0 /* Debug */,
+				5D30D48D23FB456F0023AFE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5D72595523FB39F8003C2F06 /* Project object */;
+	rootObject = 5D30D45323FB456E0023AFE0 /* Project object */;
 }
