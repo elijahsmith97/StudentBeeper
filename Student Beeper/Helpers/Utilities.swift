@@ -11,6 +11,8 @@ import UIKit
 
 class Utilities {
     
+    
+    //all of this styling will be implemented within a view's "ValidateFields" function
     /*static func styleTextField(_ textfield:UITextField) {
         
         // Create the bottom line
@@ -47,8 +49,29 @@ class Utilities {
     */
     static func isPasswordValid(_ password : String) -> Bool {
         
-        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6,}$")
         return passwordTest.evaluate(with: password)
+    }
+    
+    static func isStudentEmailValid(_ email: String) -> Bool {
+        return email.hasSuffix(".edu")
+    }
+    
+    static func formattedNumber(_ number: String) -> String {
+        let cleanPhoneNumber = number.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+        let mask = "(XXX) XXX-XXXX"
+
+        var result = ""
+        var index = cleanPhoneNumber.startIndex
+        for ch in mask where index <= cleanPhoneNumber.endIndex {
+            if ch == "X" {
+                result.append(cleanPhoneNumber[index])
+                index = cleanPhoneNumber.index(after: index)
+            } else {
+                result.append(ch)
+            }
+        }
+        return result
     }
     
 }
