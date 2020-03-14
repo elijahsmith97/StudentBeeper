@@ -22,11 +22,17 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var confirmPasswordLabel: UITextField!
+    
     @IBOutlet weak var numberTextField: UITextField!
     
     @IBOutlet weak var registerButton: UIButton!
     
     @IBOutlet weak var headsUpLabel: UILabel!
+    
+    @IBOutlet weak var goBackButton: UIButton!
+    
+    @IBOutlet weak var continueButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,26 +43,42 @@ class RegisterViewController: UIViewController {
     func setUpElements() {
         //this hides our Heads Up label until needed
         headsUpLabel.alpha = 0
+        //this hides our Continue Anyways button until needed
+        continueButton.alpha = 0
     }
     
     
     // Check the fields and validate that the data is correct. If everything is correct, this method returns nil. Otherwise, it returns the error message
     func validateFields() -> String? {
         if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || numberTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            return "Hey! It looks like you didn't fill in all the boxes!"
+            return "Please fill in all the boxes."
         }
         
+        let cleanedEmail = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let cleanedConfirmPassword = confirmPasswordLabel.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
         
         if Utilities.isPasswordValid(cleanedPassword) == false {
             //password isn't secure enough
-            return "Oh no... please try a more secure password."
+            return "Please try a more secure password."
+        }
+        
+        if (cleanedPassword != cleanedConfirmPassword) {
+            // password and confirm password does not match
+            return "Password not confirmed."
+        }
+        
+        if Utilities.isStudentEmailValid(cleanedEmail) == false {
+            //email isn't a valid student email
+            continueButton.alpha = 1
+            return "No student email?"
         }
         
         return nil
     }
     
-    //Register Action Button
+    // Register Action Button
     @IBAction func registerTapped(_ sender: Any) {
         
         //validate the fields
@@ -72,11 +94,11 @@ class RegisterViewController: UIViewController {
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let phoneNumber = numberTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let cleanedNumber = numberTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let formattedNumber = Utilities.formattedNumber(cleanedNumber)
             
             
-            
-            //create the user
+            // create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                 if err != nil {
                     // there was an error creating the user
@@ -89,7 +111,7 @@ class RegisterViewController: UIViewController {
                         "firstName":firstName,
                         "lastName":lastName,
                         "uid":result!.user.uid,
-                        "phoneNumber":phoneNumber]) {
+                        "phoneNumber":formattedNumber]) {
                             (error) in if error != nil {
                            //this error message can be removed in the future to avoid showing users such error message
                             self.showError("UID Error")
@@ -101,7 +123,42 @@ class RegisterViewController: UIViewController {
                 }
             }
         }
-        
+    }
+    
+    // "Continue Anyways" button pressed
+    @IBAction func continueTapped(_ sender: Any) {
+       //create clean versions of data
+       let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+       let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+       let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+       let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+       let cleanedNumber = numberTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+       let formattedNumber = Utilities.formattedNumber(cleanedNumber)
+       
+       // create the user
+       Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
+           if err != nil {
+               // there was an error creating the user
+               self.showError("Something went wrong... Try again later")
+           }
+           else {
+               // user was created successfully. now store first and last name
+               let db = Firestore.firestore()
+               db.collection("users").addDocument(data: [
+                   "firstName":firstName,
+                   "lastName":lastName,
+                   "uid":result!.user.uid,
+                   "phoneNumber":formattedNumber]) {
+                       (error) in if error != nil {
+                      //this error message can be removed in the future to avoid showing users such error message
+                       self.showError("UID Error")
+                   }
+               }
+               
+               //nav to home screen
+               self.transitionToHome()
+           }
+        }
     }
     
     func showError(_ message:String) {
