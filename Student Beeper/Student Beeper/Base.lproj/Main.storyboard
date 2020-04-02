@@ -103,14 +103,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SR5-Xy-DPN">
-                                <rect key="frame" x="184" y="438" width="46" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Beeper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-TF-ene">
+                                <rect key="frame" x="10" y="164" width="394" height="55"/>
+                                <accessibility key="accessibilityConfiguration" label="Home"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r4e-th-Qzz">
+                                <rect key="frame" x="10" y="405.5" width="394" height="85.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-TF-ene">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="20.5"/>
-                                        <accessibility key="accessibilityConfiguration" label="Home"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3p-kW-33d">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="62"/>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="38"/>
+                                        <state key="normal" title="Beeping">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click here to start beeping!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ne-M8-4wP">
+                                        <rect key="frame" x="0.0" y="62" width="394" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CDD-du-qII">
+                                <rect key="frame" x="10" y="498.5" width="394" height="85.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9n-4z-tKM">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="62"/>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="38"/>
+                                        <state key="normal" title="Need a Beep">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click here if you are in need of a beeper!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obe-Ii-FqM">
+                                        <rect key="frame" x="0.0" y="62" width="394" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -118,8 +149,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.58715492486953735" green="0.84261423349380493" blue="0.91849297285079956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SR5-Xy-DPN" firstAttribute="centerY" secondItem="LTC-iW-XRe" secondAttribute="centerY" id="Syw-8m-5Ql"/>
-                            <constraint firstItem="SR5-Xy-DPN" firstAttribute="centerX" secondItem="LTC-iW-XRe" secondAttribute="centerX" id="ukY-Ut-dTf"/>
+                            <constraint firstItem="r4e-th-Qzz" firstAttribute="centerX" secondItem="LTC-iW-XRe" secondAttribute="centerX" id="Cdw-bw-MFK"/>
+                            <constraint firstItem="CDD-du-qII" firstAttribute="centerX" secondItem="LTC-iW-XRe" secondAttribute="centerX" id="EMj-Cv-umH"/>
+                            <constraint firstItem="Sab-TF-ene" firstAttribute="top" secondItem="2k7-nd-fYi" secondAttribute="top" constant="120" id="Eqh-bt-Hjj"/>
+                            <constraint firstItem="r4e-th-Qzz" firstAttribute="leading" secondItem="2k7-nd-fYi" secondAttribute="leading" constant="10" id="Oh2-U0-FVV"/>
+                            <constraint firstItem="r4e-th-Qzz" firstAttribute="centerY" secondItem="LTC-iW-XRe" secondAttribute="centerY" id="XHq-Qy-FSl"/>
+                            <constraint firstItem="Sab-TF-ene" firstAttribute="leading" secondItem="r4e-th-Qzz" secondAttribute="leading" id="dvz-Om-C4U"/>
+                            <constraint firstItem="CDD-du-qII" firstAttribute="leading" secondItem="2k7-nd-fYi" secondAttribute="leading" constant="10" id="eFK-kn-fmU"/>
+                            <constraint firstItem="CDD-du-qII" firstAttribute="top" secondItem="r4e-th-Qzz" secondAttribute="bottom" constant="7.5" id="jGE-gb-Ymb"/>
+                            <constraint firstItem="r4e-th-Qzz" firstAttribute="centerX" secondItem="LTC-iW-XRe" secondAttribute="centerX" id="u7z-aw-4IX"/>
+                            <constraint firstItem="Sab-TF-ene" firstAttribute="trailing" secondItem="r4e-th-Qzz" secondAttribute="trailing" id="xp3-c6-5O5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2k7-nd-fYi"/>
                     </view>
