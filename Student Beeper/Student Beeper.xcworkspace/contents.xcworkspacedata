@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/elijahsmith/Desktop/Classes/Capstone/Project/Student Beeper/Student Beeper/Student Beeper/ViewControllers/BeepingViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Student Beeper.xcodeproj">
    </FileRef>
    <FileRef

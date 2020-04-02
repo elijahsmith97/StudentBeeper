@@ -111,7 +111,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r4e-th-Qzz">
-                                <rect key="frame" x="10" y="405.5" width="394" height="85.5"/>
+                                <rect key="frame" x="10" y="363" width="394" height="85.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3p-kW-33d">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="62"/>
@@ -119,6 +119,9 @@
                                         <state key="normal" title="Beeping">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="jON-86-p3T" kind="show" id="zM5-dD-Ctn"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click here to start beeping!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ne-M8-4wP">
                                         <rect key="frame" x="0.0" y="62" width="394" height="23.5"/>
@@ -129,7 +132,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CDD-du-qII">
-                                <rect key="frame" x="10" y="498.5" width="394" height="85.5"/>
+                                <rect key="frame" x="10" y="468.5" width="394" height="85.5"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9n-4z-tKM">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="62"/>
@@ -137,6 +140,9 @@
                                         <state key="normal" title="Need a Beep">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="G4Y-xm-Xec" kind="show" id="2qr-bg-yuG"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click here if you are in need of a beeper!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obe-Ii-FqM">
                                         <rect key="frame" x="0.0" y="62" width="394" height="23.5"/>
@@ -153,10 +159,10 @@
                             <constraint firstItem="CDD-du-qII" firstAttribute="centerX" secondItem="LTC-iW-XRe" secondAttribute="centerX" id="EMj-Cv-umH"/>
                             <constraint firstItem="Sab-TF-ene" firstAttribute="top" secondItem="2k7-nd-fYi" secondAttribute="top" constant="120" id="Eqh-bt-Hjj"/>
                             <constraint firstItem="r4e-th-Qzz" firstAttribute="leading" secondItem="2k7-nd-fYi" secondAttribute="leading" constant="10" id="Oh2-U0-FVV"/>
-                            <constraint firstItem="r4e-th-Qzz" firstAttribute="centerY" secondItem="LTC-iW-XRe" secondAttribute="centerY" id="XHq-Qy-FSl"/>
+                            <constraint firstItem="r4e-th-Qzz" firstAttribute="centerY" secondItem="LTC-iW-XRe" secondAttribute="centerY" constant="-42.25" id="XHq-Qy-FSl"/>
                             <constraint firstItem="Sab-TF-ene" firstAttribute="leading" secondItem="r4e-th-Qzz" secondAttribute="leading" id="dvz-Om-C4U"/>
                             <constraint firstItem="CDD-du-qII" firstAttribute="leading" secondItem="2k7-nd-fYi" secondAttribute="leading" constant="10" id="eFK-kn-fmU"/>
-                            <constraint firstItem="CDD-du-qII" firstAttribute="top" secondItem="r4e-th-Qzz" secondAttribute="bottom" constant="7.5" id="jGE-gb-Ymb"/>
+                            <constraint firstItem="CDD-du-qII" firstAttribute="top" secondItem="r4e-th-Qzz" secondAttribute="bottom" constant="20" id="lMR-jE-RC5"/>
                             <constraint firstItem="r4e-th-Qzz" firstAttribute="centerX" secondItem="LTC-iW-XRe" secondAttribute="centerX" id="u7z-aw-4IX"/>
                             <constraint firstItem="Sab-TF-ene" firstAttribute="trailing" secondItem="r4e-th-Qzz" secondAttribute="trailing" id="xp3-c6-5O5"/>
                         </constraints>
@@ -166,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QC4-vp-qJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2877" y="-344"/>
+            <point key="canvasLocation" x="3094" y="86"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="XRg-8F-Kfu">
@@ -314,6 +320,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6s-qA-B5V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </scene>
+        <!--Beeping View Controller-->
+        <scene sceneID="ber-3s-JN3">
+            <objects>
+                <viewController title="Beeping View Controller" id="jON-86-p3T" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ICw-ax-NbF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beeping Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA3-Py-AF4">
+                                <rect key="frame" x="186" y="411" width="106" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58715492486953735" green="0.84261423349380493" blue="0.91849297285079956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZA3-Py-AF4" firstAttribute="top" secondItem="p4k-Zb-2Ea" secondAttribute="top" constant="411" id="2JA-2a-o5t"/>
+                            <constraint firstItem="ZA3-Py-AF4" firstAttribute="centerY" secondItem="ICw-ax-NbF" secondAttribute="centerY" id="OPT-8G-7xe"/>
+                            <constraint firstItem="ZA3-Py-AF4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="p4k-Zb-2Ea" secondAttribute="leading" id="ghw-PE-dZj"/>
+                            <constraint firstItem="p4k-Zb-2Ea" firstAttribute="trailing" secondItem="ZA3-Py-AF4" secondAttribute="trailing" constant="122" id="hXe-8r-hlN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p4k-Zb-2Ea"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BUH-32-4p9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGW-fd-Fm3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4425" y="-312"/>
+        </scene>
+        <!--Need Beep View Controller-->
+        <scene sceneID="54c-v5-Keg">
+            <objects>
+                <viewController title="Need Beep View Controller" id="G4Y-xm-Xec" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B0O-Ml-z4t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Need a Beep Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgy-vs-2Vh">
+                                <rect key="frame" x="186" y="411" width="141" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58715492486953735" green="0.84261423349380493" blue="0.91849297285079956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4mU-UB-FqN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qnu-14-Sv7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lct-Pv-gBA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4425" y="455"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
