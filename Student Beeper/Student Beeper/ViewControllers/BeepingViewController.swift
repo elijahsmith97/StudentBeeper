@@ -10,4 +10,8 @@ import Foundation
 
 class BeepingViewController: UIViewController {
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
 }

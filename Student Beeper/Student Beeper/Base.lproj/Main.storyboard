@@ -15,6 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Beeper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWo-IM-1vs">
+                                <rect key="frame" x="40" y="194" width="334" height="55"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Home"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LNi-3I-qzj">
                                 <rect key="frame" x="40" y="317" width="334" height="262.5"/>
                                 <subviews>
@@ -76,9 +84,13 @@
                         <color key="backgroundColor" red="0.58715492486953735" green="0.84261423349380493" blue="0.91849297285079956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="LNi-3I-qzj" firstAttribute="top" secondItem="yWo-IM-1vs" secondAttribute="bottom" constant="68" id="LEC-WK-oi3"/>
                             <constraint firstItem="Xk4-uS-hFT" firstAttribute="trailing" secondItem="LNi-3I-qzj" secondAttribute="trailing" constant="40" id="QWy-CE-EQR"/>
                             <constraint firstItem="LNi-3I-qzj" firstAttribute="leading" secondItem="Xk4-uS-hFT" secondAttribute="leading" constant="40" id="RsO-PM-oVY"/>
+                            <constraint firstItem="yWo-IM-1vs" firstAttribute="top" secondItem="Xk4-uS-hFT" secondAttribute="top" constant="150" id="VZ5-G6-C5H"/>
+                            <constraint firstItem="yWo-IM-1vs" firstAttribute="leading" secondItem="LNi-3I-qzj" secondAttribute="leading" id="Xtc-Qr-8dQ"/>
                             <constraint firstItem="LNi-3I-qzj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bXl-Co-AJo"/>
+                            <constraint firstItem="yWo-IM-1vs" firstAttribute="trailing" secondItem="LNi-3I-qzj" secondAttribute="trailing" id="whd-lV-Ka0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xk4-uS-hFT"/>
                     </view>
@@ -89,6 +101,7 @@
                         <outlet property="loginButton" destination="rpo-vX-ChR" id="x94-XC-uNM"/>
                         <outlet property="passwordTextField" destination="kTf-b5-oBV" id="sUG-RX-xsB"/>
                         <outlet property="registerButton" destination="rpo-vX-ChR" id="fNo-nH-5zI"/>
+                        <outlet property="studentBeeperLabel" destination="yWo-IM-1vs" id="j1y-ll-3B0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -105,9 +118,10 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Beeper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sab-TF-ene">
                                 <rect key="frame" x="10" y="164" width="394" height="55"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Home"/>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="42"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r4e-th-Qzz">
@@ -120,6 +134,8 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="BeepingButton:" destination="hmL-uV-HYS" eventType="touchUpInside" id="9uf-u2-xIX"/>
+                                            <action selector="beepingButton:" destination="hmL-uV-HYS" eventType="touchUpInside" id="X7O-DN-Yox"/>
                                             <segue destination="jON-86-p3T" kind="show" id="zM5-dD-Ctn"/>
                                         </connections>
                                     </button>
@@ -141,6 +157,8 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="NeedBeepButton:" destination="hmL-uV-HYS" eventType="touchUpInside" id="KFz-qc-PYL"/>
+                                            <action selector="needBeepButton:" destination="hmL-uV-HYS" eventType="touchUpInside" id="UvB-t2-hkZ"/>
                                             <segue destination="G4Y-xm-Xec" kind="show" id="2qr-bg-yuG"/>
                                         </connections>
                                     </button>
@@ -169,6 +187,14 @@
                         <viewLayoutGuide key="safeArea" id="2k7-nd-fYi"/>
                     </view>
                     <navigationItem key="navigationItem" id="eeM-j6-7ur"/>
+                    <connections>
+                        <outlet property="BeepingLabel" destination="6ne-M8-4wP" id="FUa-DP-MDe"/>
+                        <outlet property="NeedBeepLabel" destination="obe-Ii-FqM" id="Wwb-c7-5bd"/>
+                        <outlet property="StudentBeeperLabel" destination="Sab-TF-ene" id="CG6-uJ-ojd"/>
+                        <outlet property="beepingLabel" destination="6ne-M8-4wP" id="dnm-EA-JDN"/>
+                        <outlet property="needBeepLabel" destination="obe-Ii-FqM" id="iAI-v6-nI3"/>
+                        <outlet property="studentBeeperLabel" destination="Sab-TF-ene" id="L5p-c3-Zn0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QC4-vp-qJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,6 +208,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Beeper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETn-lX-7cs">
+                                <rect key="frame" x="40" y="119" width="334" height="55"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" label="Home"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0R4-4p-G0P">
                                 <rect key="frame" x="40" y="216" width="334" height="464"/>
                                 <subviews>
@@ -277,8 +311,11 @@
                         <color key="backgroundColor" red="0.58715492486953735" green="0.84261423349380493" blue="0.91849297285079956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kgH-Bg-gVA" firstAttribute="leading" secondItem="SmJ-ko-ypl" secondAttribute="leading" constant="40" id="3J4-Yw-WOq"/>
+                            <constraint firstItem="ETn-lX-7cs" firstAttribute="leading" secondItem="0R4-4p-G0P" secondAttribute="leading" id="3xK-xV-Wv5"/>
                             <constraint firstAttribute="trailing" secondItem="kgH-Bg-gVA" secondAttribute="trailing" constant="40" id="4yY-lf-f5X"/>
+                            <constraint firstItem="ETn-lX-7cs" firstAttribute="trailing" secondItem="0R4-4p-G0P" secondAttribute="trailing" id="Ah3-y3-JiH"/>
                             <constraint firstItem="SmJ-ko-ypl" firstAttribute="bottom" secondItem="0R4-4p-G0P" secondAttribute="bottom" constant="182" id="DlV-ig-aDI"/>
+                            <constraint firstItem="ETn-lX-7cs" firstAttribute="top" secondItem="SmJ-ko-ypl" secondAttribute="top" constant="75" id="btx-HU-nLj"/>
                             <constraint firstItem="kgH-Bg-gVA" firstAttribute="top" secondItem="0R4-4p-G0P" secondAttribute="bottom" constant="10" id="eTZ-l3-7jM"/>
                             <constraint firstItem="0R4-4p-G0P" firstAttribute="leading" secondItem="SmJ-ko-ypl" secondAttribute="leading" constant="40" id="f7x-Y9-8gd"/>
                             <constraint firstItem="ZPZ-O4-qM1" firstAttribute="height" secondItem="jmn-yk-ukA" secondAttribute="height" id="iZ6-8Z-jL2"/>
@@ -298,6 +335,7 @@
                         <outlet property="numberTextField" destination="7K7-sQ-CYZ" id="srB-cg-4kM"/>
                         <outlet property="passwordTextField" destination="pmz-9q-Q62" id="H7W-ss-bav"/>
                         <outlet property="registerButton" destination="jmn-yk-ukA" id="8Bh-yC-hkk"/>
+                        <outlet property="studentBeeperLabel" destination="ETn-lX-7cs" id="5Tz-fF-7G0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n4p-MI-75M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

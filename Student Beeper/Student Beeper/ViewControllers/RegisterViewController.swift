@@ -12,6 +12,7 @@ import Firebase
 
 class RegisterViewController: UIViewController {
     
+    @IBOutlet weak var studentBeeperLabel: UILabel!
     
     //Text Field Outlets
     @IBOutlet weak var firstNameTextField: UITextField!

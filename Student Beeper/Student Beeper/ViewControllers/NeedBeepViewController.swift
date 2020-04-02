@@ -10,5 +10,9 @@ import UIKit
 import Foundation
 
 class NeedBeepViewController: UIViewController {
+ 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
 }
