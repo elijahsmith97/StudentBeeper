@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func beepingButton(_ sender: Any) {
     }
+    
     @IBOutlet weak var beepingLabel: UILabel!
     
     @IBAction func needBeepButton(_ sender: Any) {
