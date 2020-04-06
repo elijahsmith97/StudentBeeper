@@ -13,12 +13,15 @@ import Firebase
 
 class NeedBeepViewController: UIViewController {
  
+    var postsArray = [Any]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
         showPostings()
     }
 
-    @IBOutlet weak var postsTable: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     func showPostings() {
         let db = Firestore.firestore()
@@ -28,14 +31,34 @@ class NeedBeepViewController: UIViewController {
             if error == nil && snapshot != nil {
                 
                 for document in snapshot!.documents {
-    
-                    let postDescription = document.data()
                     
-                
+                    let postDescription = document.data()
+                    self.postsArray.append(postDescription)
+                    
                 }
             }
+            print(self.postsArray) //prints data from db
+            self.tableView.reloadData()
         }
-
         
     }
 }
+    
+extension NeedBeepViewController: UITableViewDataSource {
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        return self.postsArray.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.textLabel?.text = postsArray[indexPath.row] as? String
+        return cell
+    }
+}
+
