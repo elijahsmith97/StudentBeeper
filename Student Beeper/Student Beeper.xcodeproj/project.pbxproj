@@ -10,6 +10,8 @@
 		0D671C7D662215BEBBD791C5 /* Pods_Student_Beeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C382D3796A684FF73AF429 /* Pods_Student_Beeper.framework */; };
 		2511FDD507CEE4FEF21B12CE /* Pods_Student_BeeperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F187100FBE6228AD4D694D /* Pods_Student_BeeperTests.framework */; };
 		5D0CAF2E2405FA660026AE07 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0CAF2D2405FA660026AE07 /* Utilities.swift */; };
+		5D2D79442436A883000D84CB /* BeepingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D79432436A883000D84CB /* BeepingViewController.swift */; };
+		5D2D79462436A8BD000D84CB /* NeedBeepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D79452436A8BD000D84CB /* NeedBeepViewController.swift */; };
 		5D30D45F23FB456E0023AFE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */; };
 		5D30D46123FB456E0023AFE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D46023FB456E0023AFE0 /* SceneDelegate.swift */; };
 		5D30D46323FB456E0023AFE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D46223FB456E0023AFE0 /* ViewController.swift */; };
@@ -50,6 +52,8 @@
 		36F187100FBE6228AD4D694D /* Pods_Student_BeeperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Student_BeeperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F8A60AABC475F5B42E5DA7 /* Pods-Student BeeperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Student BeeperTests.debug.xcconfig"; path = "Target Support Files/Pods-Student BeeperTests/Pods-Student BeeperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D0CAF2D2405FA660026AE07 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5D2D79432436A883000D84CB /* BeepingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BeepingViewController.swift; path = "/Users/elijahsmith/Desktop/Classes/Capstone/Project/Student Beeper/Student Beeper/Student Beeper/ViewControllers/BeepingViewController.swift"; sourceTree = "<absolute>"; };
+		5D2D79452436A8BD000D84CB /* NeedBeepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedBeepViewController.swift; sourceTree = "<group>"; };
 		5D30D45B23FB456E0023AFE0 /* Student Beeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Beeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D30D46023FB456E0023AFE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				5DC8ADB02404770500C0D559 /* LoginViewController.swift */,
 				5DC8ADAC240476D600C0D559 /* RegisterViewController.swift */,
 				5DC8ADAE240476FA00C0D559 /* HomeViewController.swift */,
+				5D2D79432436A883000D84CB /* BeepingViewController.swift */,
+				5D2D79452436A8BD000D84CB /* NeedBeepViewController.swift */,
 				5D30D46223FB456E0023AFE0 /* ViewController.swift */,
 			);
 			path = ViewControllers;
@@ -445,6 +451,8 @@
 				5DC8ADB12404770600C0D559 /* LoginViewController.swift in Sources */,
 				5DC8ADAF240476FA00C0D559 /* HomeViewController.swift in Sources */,
 				5D0CAF2E2405FA660026AE07 /* Utilities.swift in Sources */,
+				5D2D79442436A883000D84CB /* BeepingViewController.swift in Sources */,
+				5D2D79462436A8BD000D84CB /* NeedBeepViewController.swift in Sources */,
 				5D30D46323FB456E0023AFE0 /* ViewController.swift in Sources */,
 				5D30D45F23FB456E0023AFE0 /* AppDelegate.swift in Sources */,
 				5D30D46123FB456E0023AFE0 /* SceneDelegate.swift in Sources */,
@@ -649,7 +657,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.elijahsmith.Student-Beeper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elijahsmith.Student-Beeper/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
