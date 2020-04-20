@@ -11,54 +11,83 @@ import FirebaseAuth
 import Foundation
 import Firebase
 
-class NeedBeepViewController: UIViewController {
- 
-    var postsArray = [Any]()
+class NeedBeepViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.dataSource = self
-        showPostings()
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
     }
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as? PostCell {
+            cell.configureCell(post: posts[indexPath.row])
+            return cell
+        } else {
+            return UITableViewCell()
+        }
+    }
+    
+    //Outlets
     @IBOutlet weak var tableView: UITableView!
     
-    func showPostings() {
-        let db = Firestore.firestore()
-        
-        db.collection("posts").getDocuments { (snapshot, error) in
-            
-            if error == nil && snapshot != nil {
-                
-                for document in snapshot!.documents {
-                    
-                    let postDescription = document.data()
-                    self.postsArray.append(postDescription)
-                    
-                }
-            }
-            print(self.postsArray) //prints data from db
-            self.tableView.reloadData()
-        }
-        
-    }
-}
+    @IBOutlet weak var emailLabel: UILabel!
     
-extension NeedBeepViewController: UITableViewDataSource {
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-
-        return 1
+    @IBOutlet weak var capacityLabel: UILabel!
+    
+    @IBOutlet weak var vehicleTypeLabel: UILabel!
+    
+    @IBOutlet weak var timeConstraintLabel: UILabel!
+    
+    
+    private var postsCollectionRef: CollectionReference!
+    private var posts = [Post]()
+       
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableView.automaticDimension
+        
+        postsCollectionRef = Firestore.firestore().collection("posts")
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return self.postsArray.count
+    func showPostings() {
+        postsCollectionRef.getDocuments { (snapshot, error) in
+        if let err = error {
+            debugPrint("Error fetching documents: \(err)")
+        } else {
+            guard let snap = snapshot else { return }
+            for document in snap.documents {
+                let data = document.data()
+                let capacity = data["capacity"] as? String ?? "Anonymous"
+                let vehicleType = data["vehicleType"] as? String ?? "Anonymous"
+                let timeConstraint = data["timeConstraint"] as? String ?? "Anonymous"
+                let email = data["email"] as? String ?? "Anonymous"
+                
+                let newPost = Post(capacity: capacity, vehicleType: vehicleType, timeConstraint: timeConstraint, email: email)
+                
+                self.posts.append(newPost)
+            }
+            
+            self.tableView.reloadData()
+            
+          }
+        }
     }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = postsArray[indexPath.row] as? String
-        return cell
+        
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        //init code
+    }
+    
+    func configureCell(post: Post) {
+        emailLabel.text = post.emailText
+        capacityLabel.text = post.capacityText
+        vehicleTypeLabel.text = post.vehicleTypeText
+        timeConstraintLabel.text = post.timeConstraintText
     }
 }
+
 

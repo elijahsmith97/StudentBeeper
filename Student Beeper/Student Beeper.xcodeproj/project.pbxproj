@@ -10,7 +10,6 @@
 		0D671C7D662215BEBBD791C5 /* Pods_Student_Beeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02C382D3796A684FF73AF429 /* Pods_Student_Beeper.framework */; };
 		2511FDD507CEE4FEF21B12CE /* Pods_Student_BeeperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36F187100FBE6228AD4D694D /* Pods_Student_BeeperTests.framework */; };
 		5D0CAF2E2405FA660026AE07 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0CAF2D2405FA660026AE07 /* Utilities.swift */; };
-		5D2D79442436A883000D84CB /* BeepingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D79432436A883000D84CB /* BeepingViewController.swift */; };
 		5D2D79462436A8BD000D84CB /* NeedBeepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D79452436A8BD000D84CB /* NeedBeepViewController.swift */; };
 		5D30D45F23FB456E0023AFE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */; };
 		5D30D46123FB456E0023AFE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D46023FB456E0023AFE0 /* SceneDelegate.swift */; };
@@ -21,9 +20,13 @@
 		5D30D47623FB456F0023AFE0 /* Student_BeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D47523FB456F0023AFE0 /* Student_BeeperTests.swift */; };
 		5D30D48123FB456F0023AFE0 /* Student_BeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D48023FB456F0023AFE0 /* Student_BeeperUITests.swift */; };
 		5D30D49123FB49C90023AFE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D30D49023FB49C90023AFE0 /* GoogleService-Info.plist */; };
+		5DB97787244D1E52000AD82A /* BeepingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB97786244D1E52000AD82A /* BeepingViewController.swift */; };
+		5DB97789244D2018000AD82A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB97788244D2017000AD82A /* LoginViewController.swift */; };
+		5DB9778E244E2B2E000AD82A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB9778D244E2B2E000AD82A /* User.swift */; };
+		5DB97790244E2B40000AD82A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB9778F244E2B40000AD82A /* Post.swift */; };
+		5DB97793244E355F000AD82A /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB97792244E355F000AD82A /* PostCell.swift */; };
 		5DC8ADAD240476D600C0D559 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8ADAC240476D600C0D559 /* RegisterViewController.swift */; };
 		5DC8ADAF240476FA00C0D559 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8ADAE240476FA00C0D559 /* HomeViewController.swift */; };
-		5DC8ADB12404770600C0D559 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC8ADB02404770500C0D559 /* LoginViewController.swift */; };
 		5DF824662407374300421661 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF824652407374300421661 /* Constants.swift */; };
 		FBA6955F273A7E11A2E73CD6 /* Pods_Student_Beeper_Student_BeeperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FC862BE32FCC6C7FD3C106 /* Pods_Student_Beeper_Student_BeeperUITests.framework */; };
 /* End PBXBuildFile section */
@@ -52,7 +55,6 @@
 		36F187100FBE6228AD4D694D /* Pods_Student_BeeperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Student_BeeperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F8A60AABC475F5B42E5DA7 /* Pods-Student BeeperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Student BeeperTests.debug.xcconfig"; path = "Target Support Files/Pods-Student BeeperTests/Pods-Student BeeperTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5D0CAF2D2405FA660026AE07 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		5D2D79432436A883000D84CB /* BeepingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BeepingViewController.swift; path = "/Users/elijahsmith/Desktop/Classes/Capstone/Project/Student Beeper/Student Beeper/Student Beeper/ViewControllers/BeepingViewController.swift"; sourceTree = "<absolute>"; };
 		5D2D79452436A8BD000D84CB /* NeedBeepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeedBeepViewController.swift; sourceTree = "<group>"; };
 		5D30D45B23FB456E0023AFE0 /* Student Beeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Student Beeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,9 +71,13 @@
 		5D30D48023FB456F0023AFE0 /* Student_BeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperUITests.swift; sourceTree = "<group>"; };
 		5D30D48223FB456F0023AFE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D30D49023FB49C90023AFE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5DB97786244D1E52000AD82A /* BeepingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeepingViewController.swift; sourceTree = "<group>"; };
+		5DB97788244D2017000AD82A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5DB9778D244E2B2E000AD82A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5DB9778F244E2B40000AD82A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5DB97792244E355F000AD82A /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		5DC8ADAC240476D600C0D559 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5DC8ADAE240476FA00C0D559 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		5DC8ADB02404770500C0D559 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "/Users/elijahsmith/Desktop/Classes/Capstone/Project/Student Beeper/Student Beeper/Student Beeper/LoginViewController.swift"; sourceTree = "<absolute>"; };
 		5DF824652407374300421661 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5FC862BE32FCC6C7FD3C106 /* Pods_Student_Beeper_Student_BeeperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Student_Beeper_Student_BeeperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF54CA7CB77353814D6581A4 /* Pods-Student Beeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Student Beeper.debug.xcconfig"; path = "Target Support Files/Pods-Student Beeper/Pods-Student Beeper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +125,8 @@
 		5D30D45223FB456E0023AFE0 = {
 			isa = PBXGroup;
 			children = (
+				5DB97791244E354D000AD82A /* View */,
+				5DB9778A244E2B0B000AD82A /* Models */,
 				5D0CAF2C2405F9F50026AE07 /* Helpers */,
 				5D30D45D23FB456E0023AFE0 /* Student Beeper */,
 				5D30D47423FB456F0023AFE0 /* Student BeeperTests */,
@@ -172,13 +180,30 @@
 			path = "Student BeeperUITests";
 			sourceTree = "<group>";
 		};
+		5DB9778A244E2B0B000AD82A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5DB9778D244E2B2E000AD82A /* User.swift */,
+				5DB9778F244E2B40000AD82A /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5DB97791244E354D000AD82A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5DB97792244E355F000AD82A /* PostCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		5DC8ADB22404772800C0D559 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5DC8ADB02404770500C0D559 /* LoginViewController.swift */,
+				5DB97788244D2017000AD82A /* LoginViewController.swift */,
 				5DC8ADAC240476D600C0D559 /* RegisterViewController.swift */,
 				5DC8ADAE240476FA00C0D559 /* HomeViewController.swift */,
-				5D2D79432436A883000D84CB /* BeepingViewController.swift */,
+				5DB97786244D1E52000AD82A /* BeepingViewController.swift */,
 				5D2D79452436A8BD000D84CB /* NeedBeepViewController.swift */,
 				5D30D46223FB456E0023AFE0 /* ViewController.swift */,
 			);
@@ -448,13 +473,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DC8ADB12404770600C0D559 /* LoginViewController.swift in Sources */,
+				5DB97789244D2018000AD82A /* LoginViewController.swift in Sources */,
 				5DC8ADAF240476FA00C0D559 /* HomeViewController.swift in Sources */,
+				5DB97793244E355F000AD82A /* PostCell.swift in Sources */,
+				5DB97787244D1E52000AD82A /* BeepingViewController.swift in Sources */,
+				5DB97790244E2B40000AD82A /* Post.swift in Sources */,
 				5D0CAF2E2405FA660026AE07 /* Utilities.swift in Sources */,
-				5D2D79442436A883000D84CB /* BeepingViewController.swift in Sources */,
 				5D2D79462436A8BD000D84CB /* NeedBeepViewController.swift in Sources */,
 				5D30D46323FB456E0023AFE0 /* ViewController.swift in Sources */,
 				5D30D45F23FB456E0023AFE0 /* AppDelegate.swift in Sources */,
+				5DB9778E244E2B2E000AD82A /* User.swift in Sources */,
 				5D30D46123FB456E0023AFE0 /* SceneDelegate.swift in Sources */,
 				5DC8ADAD240476D600C0D559 /* RegisterViewController.swift in Sources */,
 				5DF824662407374300421661 /* Constants.swift in Sources */,

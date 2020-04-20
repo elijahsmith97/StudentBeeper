@@ -11,8 +11,11 @@ import FirebaseAuth
 import Firebase
 
 class BeepingViewController: UIViewController {
+    let db = Firestore.firestore()
     
     @IBOutlet weak var postButton: UIButton!
+    
+    @IBOutlet weak var userLabel: UILabel!
     
     @IBOutlet weak var errorLabel: UILabel!
     
@@ -27,8 +30,8 @@ class BeepingViewController: UIViewController {
     @IBOutlet weak var successLabel: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
+        super.viewDidLoad()
         setUpElements()
         
     }
@@ -36,9 +39,20 @@ class BeepingViewController: UIViewController {
     func setUpElements() {
         errorLabel.alpha = 0
         successLabel.alpha = 0
+        
+        //current user reference from firestore
+        let currentUser = Auth.auth().currentUser
+        if let currentUser = currentUser {
+            //the user's ID and email that is unique to the firestore
+            //let uid = currentUser.uid
+            let email = currentUser.email
+            userLabel.text = email
+        }
+        
     }
     
     func validateFields() -> String? {
+        
         let capacity = capacityTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let vehicle = vehicleTypeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let timeConstraint = timeConstraintTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -59,14 +73,27 @@ class BeepingViewController: UIViewController {
         let capacity = capacityTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let vehicle = vehicleTypeTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let timeConstraint = timeConstraintTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+
         
-        let db = Firestore.firestore()
-        db.collection("posts")
-            .addDocument(data: ["capacity":capacity,
+        //loading user data to store UID in each specific document
+        let user = Auth.auth().currentUser
+        if let user = user {
+            //the user's ID and email that is unique to the firestore
+            let email = user.email
+        
+            db.collection("posts")
+                .addDocument(data: ["capacity":capacity,
                                 "vehicleType":vehicle,
-                                "timeConstraint":timeConstraint])
-        clearText()
-        showSuccess()
+                                "timeConstraint":timeConstraint,
+                                "email":email!]) {
+                                    (error) in if error != nil {
+                                   //this error message can be removed in the future to avoid showing users such error message
+                                    self.showError("UID Error")
+                                }
+            }
+            clearText()
+            showSuccess()
+        }
                                     
     }
     

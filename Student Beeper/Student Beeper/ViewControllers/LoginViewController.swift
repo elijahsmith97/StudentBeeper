@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
             //log the user in
             Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
                 if err != nil {
-                    // there was an error creating the user
+                    // there was an error signing the user in
                     self.showError("Oh no... I don't think those were the right credentials. Try again.")
                 }
                 else {
