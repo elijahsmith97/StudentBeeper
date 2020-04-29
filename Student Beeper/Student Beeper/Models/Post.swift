@@ -8,6 +8,7 @@
 
 import Foundation
 class Post {
+    
     var capacityText: String
     var vehicleTypeText: String
     var timeConstraintText: String
