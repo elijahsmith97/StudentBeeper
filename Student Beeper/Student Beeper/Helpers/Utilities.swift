@@ -47,16 +47,20 @@ class Utilities {
         button.tintColor = UIColor.black
     }
     */
+    
+    //used in multiple controllers to assure password strength using regex
     static func isPasswordValid(_ password : String) -> Bool {
         
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6,}$")
         return passwordTest.evaluate(with: password)
     }
     
+    //used in the the register view to decide if account should be student verified or not
     static func isStudentEmailValid(_ email: String) -> Bool {
         return email.hasSuffix(".edu")
     }
     
+    //used to format telephone numbers in the database in a more appealing / readable way
     static func formattedNumber(_ number: String) -> String {
         let cleanPhoneNumber = number.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
         let mask = "(XXX) XXX-XXXX"

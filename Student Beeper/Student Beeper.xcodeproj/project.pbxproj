@@ -14,12 +14,12 @@
 		5D30D45F23FB456E0023AFE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */; };
 		5D30D46123FB456E0023AFE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D46023FB456E0023AFE0 /* SceneDelegate.swift */; };
 		5D30D46323FB456E0023AFE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D46223FB456E0023AFE0 /* ViewController.swift */; };
-		5D30D46623FB456E0023AFE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D30D46423FB456E0023AFE0 /* Main.storyboard */; };
 		5D30D46823FB456E0023AFE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D30D46723FB456E0023AFE0 /* Assets.xcassets */; };
 		5D30D46B23FB456E0023AFE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D30D46923FB456E0023AFE0 /* LaunchScreen.storyboard */; };
 		5D30D47623FB456F0023AFE0 /* Student_BeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D47523FB456F0023AFE0 /* Student_BeeperTests.swift */; };
 		5D30D48123FB456F0023AFE0 /* Student_BeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D30D48023FB456F0023AFE0 /* Student_BeeperUITests.swift */; };
 		5D30D49123FB49C90023AFE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D30D49023FB49C90023AFE0 /* GoogleService-Info.plist */; };
+		5D4E71D0245A426A0073C358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D4E71CE245A426A0073C358 /* Main.storyboard */; };
 		5DB97787244D1E52000AD82A /* BeepingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB97786244D1E52000AD82A /* BeepingViewController.swift */; };
 		5DB97789244D2018000AD82A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB97788244D2017000AD82A /* LoginViewController.swift */; };
 		5DB9778E244E2B2E000AD82A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB9778D244E2B2E000AD82A /* User.swift */; };
@@ -60,7 +60,6 @@
 		5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D30D46023FB456E0023AFE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5D30D46223FB456E0023AFE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D30D46523FB456E0023AFE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D30D46723FB456E0023AFE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D30D46A23FB456E0023AFE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D30D46C23FB456E0023AFE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		5D30D48023FB456F0023AFE0 /* Student_BeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student_BeeperUITests.swift; sourceTree = "<group>"; };
 		5D30D48223FB456F0023AFE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D30D49023FB49C90023AFE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5D4E71CF245A426A0073C358 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DB97786244D1E52000AD82A /* BeepingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeepingViewController.swift; sourceTree = "<group>"; };
 		5DB97788244D2017000AD82A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5DB9778D244E2B2E000AD82A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -125,9 +125,6 @@
 		5D30D45223FB456E0023AFE0 = {
 			isa = PBXGroup;
 			children = (
-				5DB97791244E354D000AD82A /* View */,
-				5DB9778A244E2B0B000AD82A /* Models */,
-				5D0CAF2C2405F9F50026AE07 /* Helpers */,
 				5D30D45D23FB456E0023AFE0 /* Student Beeper */,
 				5D30D47423FB456F0023AFE0 /* Student BeeperTests */,
 				5D30D47F23FB456F0023AFE0 /* Student BeeperUITests */,
@@ -150,11 +147,14 @@
 		5D30D45D23FB456E0023AFE0 /* Student Beeper */ = {
 			isa = PBXGroup;
 			children = (
+				5DB97791244E354D000AD82A /* View */,
+				5DB9778A244E2B0B000AD82A /* Models */,
+				5D0CAF2C2405F9F50026AE07 /* Helpers */,
 				5D30D45E23FB456E0023AFE0 /* AppDelegate.swift */,
 				5D30D46023FB456E0023AFE0 /* SceneDelegate.swift */,
 				5DC8ADB22404772800C0D559 /* ViewControllers */,
-				5D30D46423FB456E0023AFE0 /* Main.storyboard */,
 				5D30D46723FB456E0023AFE0 /* Assets.xcassets */,
+				5D4E71CE245A426A0073C358 /* Main.storyboard */,
 				5D30D46923FB456E0023AFE0 /* LaunchScreen.storyboard */,
 				5D30D46C23FB456E0023AFE0 /* Info.plist */,
 				5D30D49023FB49C90023AFE0 /* GoogleService-Info.plist */,
@@ -345,7 +345,7 @@
 				5D30D46B23FB456E0023AFE0 /* LaunchScreen.storyboard in Resources */,
 				5D30D49123FB49C90023AFE0 /* GoogleService-Info.plist in Resources */,
 				5D30D46823FB456E0023AFE0 /* Assets.xcassets in Resources */,
-				5D30D46623FB456E0023AFE0 /* Main.storyboard in Resources */,
+				5D4E71D0245A426A0073C358 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,20 +521,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D30D46423FB456E0023AFE0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D30D46523FB456E0023AFE0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5D30D46923FB456E0023AFE0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5D30D46A23FB456E0023AFE0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5D4E71CE245A426A0073C358 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D4E71CF245A426A0073C358 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

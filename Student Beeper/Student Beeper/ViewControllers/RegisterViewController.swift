@@ -16,23 +16,14 @@ class RegisterViewController: UIViewController {
     
     //Text Field Outlets
     @IBOutlet weak var firstNameTextField: UITextField!
-    
     @IBOutlet weak var lastNameTextField: UITextField!
-    
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var confirmPasswordLabel: UITextField!
-    
     @IBOutlet weak var numberTextField: UITextField!
-    
     @IBOutlet weak var registerButton: UIButton!
-    
     @IBOutlet weak var headsUpLabel: UILabel!
-    
     @IBOutlet weak var goBackButton: UIButton!
-    
     @IBOutlet weak var continueButton: UIButton!
     
     override func viewDidLoad() {
@@ -52,7 +43,7 @@ class RegisterViewController: UIViewController {
     // Check the fields and validate that the data is correct. If everything is correct, this method returns nil. Otherwise, it returns the error message
     func validateFields() -> String? {
         if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || numberTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
-            return "Please fill in all the boxes."
+            return "Please fill all boxes before continuing."
         }
         
         let cleanedEmail = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -67,7 +58,7 @@ class RegisterViewController: UIViewController {
         
         if (cleanedPassword != cleanedConfirmPassword) {
             // password and confirm password does not match
-            return "Password not confirmed."
+            return "Passwords are not the same."
         }
         
         if Utilities.isStudentEmailValid(cleanedEmail) == false {
@@ -97,7 +88,6 @@ class RegisterViewController: UIViewController {
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let cleanedNumber = numberTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let formattedNumber = Utilities.formattedNumber(cleanedNumber)
-            
             
             // create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in

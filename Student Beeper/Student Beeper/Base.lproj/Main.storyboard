@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Beeper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWo-IM-1vs">
-                                <rect key="frame" x="40" y="194" width="334" height="55"/>
+                                <rect key="frame" x="40" y="194" width="334" height="46"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Home"/>
                                 <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="42"/>
@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LNi-3I-qzj">
-                                <rect key="frame" x="40" y="317" width="334" height="262.5"/>
+                                <rect key="frame" x="40" y="308" width="334" height="280"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Nd-nj-vPO">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -63,9 +63,9 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKd-6U-Bgf">
-                                        <rect key="frame" x="0.0" y="240" width="334" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="240" width="334" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="22.5" id="DJJ-D9-kRT"/>
+                                            <constraint firstAttribute="height" constant="40" id="ntk-2f-P8V"/>
                                             <constraint firstAttribute="width" constant="334" id="sKk-7t-3Fk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
@@ -77,6 +77,7 @@
                                     <constraint firstItem="rpo-vX-ChR" firstAttribute="height" secondItem="9Nd-nj-vPO" secondAttribute="height" id="CgM-Qy-AeW"/>
                                     <constraint firstItem="kTf-b5-oBV" firstAttribute="height" secondItem="9Nd-nj-vPO" secondAttribute="height" id="aSa-eh-9gS"/>
                                     <constraint firstItem="rpo-vX-ChR" firstAttribute="height" secondItem="0ue-4l-u7M" secondAttribute="height" id="gIG-Mx-amf"/>
+                                    <constraint firstItem="tKd-6U-Bgf" firstAttribute="top" secondItem="rpo-vX-ChR" secondAttribute="bottom" constant="20" id="k8S-bf-LNb"/>
                                     <constraint firstItem="0ue-4l-u7M" firstAttribute="height" secondItem="9Nd-nj-vPO" secondAttribute="height" id="mxc-jk-eJg"/>
                                 </constraints>
                             </stackView>
@@ -361,13 +362,13 @@
         <!--Beeping View Controller-->
         <scene sceneID="ber-3s-JN3">
             <objects>
-                <viewController title="Beeping View Controller" id="jON-86-p3T" customClass="BeepingViewController" customModule="Student_Beeper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Beeping View Controller" modalPresentationStyle="fullScreen" id="jON-86-p3T" customClass="BeepingViewController" customModule="Student_Beeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ICw-ax-NbF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IbU-OF-L4s">
-                                <rect key="frame" x="40" y="229" width="334" height="384.5"/>
+                                <rect key="frame" x="40" y="229" width="334" height="438.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post a Beep!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZA3-Py-AF4">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="42"/>
@@ -375,7 +376,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs1-nQ-mf2">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emailAddress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs1-nQ-mf2">
                                         <rect key="frame" x="0.0" y="62" width="334" height="22.5"/>
                                         <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -391,19 +392,24 @@
                                         <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time Constraint" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOg-8u-EXF">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AOg-8u-EXF">
                                         <rect key="frame" x="0.0" y="212.5" width="334" height="34"/>
                                         <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Time" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yhb-cw-c8K">
+                                        <rect key="frame" x="0.0" y="266.5" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNB-RG-5eK">
-                                        <rect key="frame" x="0.0" y="266.5" width="334" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="320.5" width="334" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkf-Da-TEo">
-                                        <rect key="frame" x="0.0" y="307" width="334" height="35"/>
+                                        <rect key="frame" x="0.0" y="361" width="334" height="35"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                         <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -416,7 +422,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMr-eV-DQl">
-                                        <rect key="frame" x="0.0" y="362" width="334" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="416" width="334" height="22.5"/>
                                         <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                         <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -435,10 +441,11 @@
                     <connections>
                         <outlet property="beepingPageLabel" destination="ZA3-Py-AF4" id="SE9-RL-MvC"/>
                         <outlet property="capacityTextField" destination="UoT-gT-sef" id="4b8-ht-sj2"/>
+                        <outlet property="endTimeTextField" destination="yhb-cw-c8K" id="ecO-59-zMI"/>
                         <outlet property="errorLabel" destination="oNB-RG-5eK" id="11a-b9-ENb"/>
                         <outlet property="postButton" destination="tkf-Da-TEo" id="FvN-NO-e99"/>
+                        <outlet property="startTimeTextField" destination="AOg-8u-EXF" id="Gzg-J3-VIS"/>
                         <outlet property="successLabel" destination="gMr-eV-DQl" id="Xel-Z7-rxH"/>
-                        <outlet property="timeConstraintTextField" destination="AOg-8u-EXF" id="n7J-JF-fSR"/>
                         <outlet property="userLabel" destination="Cs1-nQ-mf2" id="lQG-55-D2m"/>
                         <outlet property="vehicleTypeTextField" destination="R65-dq-SJ5" id="cmJ-NI-rqi"/>
                     </connections>
@@ -450,104 +457,171 @@
         <!--Need Beep View Controller-->
         <scene sceneID="54c-v5-Keg">
             <objects>
-                <viewController title="Need Beep View Controller" id="G4Y-xm-Xec" customClass="NeedBeepViewController" customModule="Student_Beeper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Need Beep View Controller" modalPresentationStyle="fullScreen" id="G4Y-xm-Xec" customClass="NeedBeepViewController" customModule="Student_Beeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B0O-Ml-z4t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Need a Beep Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgy-vs-2Vh">
-                                <rect key="frame" x="137" y="113" width="141" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need-a-Beep?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgy-vs-2Vh">
+                                <rect key="frame" x="110" y="119" width="205" height="42"/>
+                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MWX-Wf-yd6">
-                                <rect key="frame" x="87" y="240" width="240" height="371"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2zW-2H-BoY">
+                                <rect key="frame" x="0.0" y="205" width="414" height="486"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="emailLabel" id="1HG-qz-fhs">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="30" reuseIdentifier="PostCell" rowHeight="204" id="Fsc-a9-0fQ" customClass="PostCell" customModule="Student_Beeper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="204"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1HG-qz-fhs" id="Csn-xz-721" customClass="TableCell" customModule="Student_Beeper" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fsc-a9-0fQ" id="MDQ-gX-rju">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBC-O7-7fe" customClass="TabelCell">
-                                                    <rect key="frame" x="99" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Sc-Ww-D4n">
+                                                    <rect key="frame" x="177" y="26" width="217" height="23"/>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAf-UE-uN5">
+                                                    <rect key="frame" x="177" y="58" width="217" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="217" id="ldi-Fy-jRn"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVR-l8-Ouq">
+                                                    <rect key="frame" x="177" y="90" width="217" height="24"/>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lB7-o1-5j8">
+                                                    <rect key="frame" x="177" y="125" width="217" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwf-pV-9Nf">
+                                                    <rect key="frame" x="30" y="26" width="47" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="23" id="M78-8E-P96"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="capacityLabel" id="ABf-E7-Q8D" customClass="TableCell" customModule="Student_Beeper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="71.5" width="240" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ABf-E7-Q8D" id="Too-cL-cUe" customClass="UITableViewCell">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0e-wv-pl3">
-                                                    <rect key="frame" x="99" y="10.5" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicle:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xA-1p-gCh">
+                                                    <rect key="frame" x="30" y="92" width="61" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="23" id="uHQ-cu-Fs3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="vehicleTypeLabel" id="0Wn-uR-34q" customClass="TableCell" customModule="Student_Beeper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="115" width="240" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Wn-uR-34q" id="Mgb-jg-wNK" customClass="UITableViewCell">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30u-mw-qgX">
-                                                    <rect key="frame" x="99" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Constraint:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcr-wq-f6S">
+                                                    <rect key="frame" x="30" y="125" width="125.5" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="timeConstraintLabel" id="yjo-Gc-grc" customClass="TableCell" customModule="Student_Beeper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="158.5" width="240" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yjo-Gc-grc" id="wX8-WI-fow" customClass="UITableViewCell">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzm-lD-cP9">
-                                                    <rect key="frame" x="99" y="10.5" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capacity:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlT-sZ-I2e">
+                                                    <rect key="frame" x="30" y="59" width="74.5" height="23"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="23" id="orP-aT-v2T"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posted at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhs-DJ-xdX">
+                                                    <rect key="frame" x="30" y="158.5" width="78" height="18.5"/>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x38-xX-qYl">
+                                                    <rect key="frame" x="177" y="156.5" width="217" height="22.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22.5" id="7nx-wg-Pmd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4xA-1p-gCh" firstAttribute="leading" secondItem="MDQ-gX-rju" secondAttribute="leadingMargin" constant="10" id="0tc-Ot-TSz"/>
+                                                <constraint firstItem="iwf-pV-9Nf" firstAttribute="leading" secondItem="MDQ-gX-rju" secondAttribute="leadingMargin" constant="10" id="4vg-lo-BwJ"/>
+                                                <constraint firstItem="iwf-pV-9Nf" firstAttribute="baseline" secondItem="5Sc-Ww-D4n" secondAttribute="baseline" id="A7V-9Y-2v2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vhs-DJ-xdX" secondAttribute="bottom" constant="16" id="AO9-pA-NO2"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="trailing" secondItem="5Sc-Ww-D4n" secondAttribute="trailing" id="BJ4-it-khN"/>
+                                                <constraint firstItem="dcr-wq-f6S" firstAttribute="top" secondItem="4xA-1p-gCh" secondAttribute="bottom" constant="10" id="Dsi-xM-CYL"/>
+                                                <constraint firstItem="lB7-o1-5j8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dcr-wq-f6S" secondAttribute="trailing" constant="8" symbolic="YES" id="EnN-mE-MrG"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="trailing" secondItem="eVR-l8-Ouq" secondAttribute="trailing" id="FOY-EE-dLR"/>
+                                                <constraint firstItem="eVR-l8-Ouq" firstAttribute="centerY" secondItem="MDQ-gX-rju" secondAttribute="centerY" id="GXh-px-QSR"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="leading" secondItem="eVR-l8-Ouq" secondAttribute="leading" id="HMJ-ok-1XR"/>
+                                                <constraint firstItem="wlT-sZ-I2e" firstAttribute="top" secondItem="iwf-pV-9Nf" secondAttribute="bottom" constant="10" id="Je7-5Y-kba"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="top" secondItem="5Sc-Ww-D4n" secondAttribute="bottom" constant="9" id="NLe-Kn-DqP"/>
+                                                <constraint firstItem="vhs-DJ-xdX" firstAttribute="top" secondItem="dcr-wq-f6S" secondAttribute="bottom" constant="10" id="NTM-UJ-70A"/>
+                                                <constraint firstItem="eVR-l8-Ouq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4xA-1p-gCh" secondAttribute="trailing" constant="8" symbolic="YES" id="NVl-76-inc"/>
+                                                <constraint firstItem="5Sc-Ww-D4n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iwf-pV-9Nf" secondAttribute="trailing" constant="8" symbolic="YES" id="QVn-cW-U4D"/>
+                                                <constraint firstItem="x38-xX-qYl" firstAttribute="top" secondItem="lB7-o1-5j8" secondAttribute="bottom" constant="8" id="U6M-sf-Jma"/>
+                                                <constraint firstItem="4xA-1p-gCh" firstAttribute="top" secondItem="wlT-sZ-I2e" secondAttribute="bottom" constant="10" id="VaZ-Tl-NCk"/>
+                                                <constraint firstItem="x38-xX-qYl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vhs-DJ-xdX" secondAttribute="trailing" constant="8" symbolic="YES" id="WQi-Ox-xq6"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="trailing" secondItem="x38-xX-qYl" secondAttribute="trailing" id="Wz5-D0-MwV"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="leading" secondItem="5Sc-Ww-D4n" secondAttribute="leading" id="XBC-tR-eaK"/>
+                                                <constraint firstItem="dcr-wq-f6S" firstAttribute="leading" secondItem="MDQ-gX-rju" secondAttribute="leadingMargin" constant="10" id="an7-2t-8oY"/>
+                                                <constraint firstItem="iwf-pV-9Nf" firstAttribute="firstBaseline" secondItem="5Sc-Ww-D4n" secondAttribute="firstBaseline" id="cEW-rM-TLX"/>
+                                                <constraint firstItem="eVR-l8-Ouq" firstAttribute="top" secondItem="nAf-UE-uN5" secondAttribute="bottom" constant="10" id="cwv-Vm-ElK"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="leading" secondItem="wlT-sZ-I2e" secondAttribute="trailing" constant="72.5" id="jrF-cu-Bd3"/>
+                                                <constraint firstItem="x38-xX-qYl" firstAttribute="centerY" secondItem="vhs-DJ-xdX" secondAttribute="centerY" id="mE5-KY-qJ1"/>
+                                                <constraint firstItem="dcr-wq-f6S" firstAttribute="firstBaseline" secondItem="lB7-o1-5j8" secondAttribute="firstBaseline" id="oVH-Wc-Hl7"/>
+                                                <constraint firstItem="iwf-pV-9Nf" firstAttribute="top" secondItem="MDQ-gX-rju" secondAttribute="topMargin" constant="15" id="pKm-BV-qf7"/>
+                                                <constraint firstItem="lB7-o1-5j8" firstAttribute="top" secondItem="eVR-l8-Ouq" secondAttribute="bottom" constant="11" id="pWR-re-hz4"/>
+                                                <constraint firstItem="wlT-sZ-I2e" firstAttribute="leading" secondItem="MDQ-gX-rju" secondAttribute="leadingMargin" constant="10" id="rQ8-0e-l1H"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vhs-DJ-xdX" secondAttribute="bottom" constant="16" id="st4-sJ-3UZ"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="leading" secondItem="x38-xX-qYl" secondAttribute="leading" id="uME-Cp-mif"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="leading" secondItem="lB7-o1-5j8" secondAttribute="leading" id="uNo-jK-0g6"/>
+                                                <constraint firstItem="vhs-DJ-xdX" firstAttribute="leading" secondItem="MDQ-gX-rju" secondAttribute="leadingMargin" constant="10" id="wNw-CF-OSh"/>
+                                                <constraint firstItem="nAf-UE-uN5" firstAttribute="trailing" secondItem="lB7-o1-5j8" secondAttribute="trailing" id="wev-lX-sxK"/>
+                                                <constraint firstItem="lB7-o1-5j8" firstAttribute="baseline" secondItem="dcr-wq-f6S" secondAttribute="baseline" id="y0O-w6-5Ju"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="capacityLabel" destination="nAf-UE-uN5" id="mfd-xu-TEE"/>
+                                            <outlet property="emailLabel" destination="5Sc-Ww-D4n" id="C7b-Zn-7YE"/>
+                                            <outlet property="timeConstraintLabel" destination="lB7-o1-5j8" id="FYW-EJ-Jto"/>
+                                            <outlet property="timePostedLabel" destination="x38-xX-qYl" id="r8B-zJ-dDw"/>
+                                            <outlet property="vehicleTypeLabel" destination="eVR-l8-Ouq" id="cde-Qt-Kgv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="G4Y-xm-Xec" id="HJc-uR-Kpn"/>
+                                    <outlet property="delegate" destination="G4Y-xm-Xec" id="g7v-jS-iwd"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.58715492486953735" green="0.84261423349380493" blue="0.91849297285079956" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4mU-UB-FqN" firstAttribute="trailing" secondItem="vgy-vs-2Vh" secondAttribute="trailing" constant="87" id="PHz-fh-Xog"/>
-                            <constraint firstItem="vgy-vs-2Vh" firstAttribute="top" secondItem="4mU-UB-FqN" secondAttribute="top" constant="411" id="e6s-sO-b1x"/>
-                            <constraint firstItem="vgy-vs-2Vh" firstAttribute="centerY" secondItem="B0O-Ml-z4t" secondAttribute="centerY" id="u3e-jP-PPb"/>
-                            <constraint firstItem="vgy-vs-2Vh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4mU-UB-FqN" secondAttribute="leading" id="unl-YJ-TB4"/>
+                            <constraint firstItem="2zW-2H-BoY" firstAttribute="top" secondItem="vgy-vs-2Vh" secondAttribute="bottom" constant="44" id="1bd-ao-vQv"/>
+                            <constraint firstItem="2zW-2H-BoY" firstAttribute="centerX" secondItem="B0O-Ml-z4t" secondAttribute="centerX" id="JfP-Rq-cEm"/>
+                            <constraint firstItem="4mU-UB-FqN" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vgy-vs-2Vh" secondAttribute="trailing" id="PHz-fh-Xog"/>
+                            <constraint firstItem="vgy-vs-2Vh" firstAttribute="leading" secondItem="4mU-UB-FqN" secondAttribute="leading" constant="110" id="hAd-qP-s7g"/>
+                            <constraint firstItem="2zW-2H-BoY" firstAttribute="centerY" secondItem="B0O-Ml-z4t" secondAttribute="centerY" id="w4Q-Zk-al2"/>
+                            <constraint firstItem="2zW-2H-BoY" firstAttribute="leading" secondItem="4mU-UB-FqN" secondAttribute="leading" id="w7H-kn-REj"/>
+                            <constraint firstItem="vgy-vs-2Vh" firstAttribute="top" secondItem="4mU-UB-FqN" secondAttribute="top" constant="75" id="xeh-3T-Nxz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4mU-UB-FqN"/>
                     </view>
                     <connections>
-                        <outlet property="postsTable" destination="MWX-Wf-yd6" id="gev-2b-cRJ"/>
+                        <outlet property="tableView" destination="2zW-2H-BoY" id="BoH-5J-nDW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lct-Pv-gBA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

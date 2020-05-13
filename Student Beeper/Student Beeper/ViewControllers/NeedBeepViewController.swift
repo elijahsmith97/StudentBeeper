@@ -2,7 +2,6 @@
 //  NeedBeepViewController.swift
 //  Student Beeper
 //
-//  Created by Elijah Smith on 4/2/20.
 //  Copyright © 2020 Elijah Smith. All rights reserved.
 //
 
@@ -18,7 +17,7 @@ class NeedBeepViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as? PostCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell {
             cell.configureCell(post: posts[indexPath.row])
             return cell
         } else {
@@ -26,17 +25,7 @@ class NeedBeepViewController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
-    //Outlets
     @IBOutlet weak var tableView: UITableView!
-    
-    @IBOutlet weak var emailLabel: UILabel!
-    
-    @IBOutlet weak var capacityLabel: UILabel!
-    
-    @IBOutlet weak var vehicleTypeLabel: UILabel!
-    
-    @IBOutlet weak var timeConstraintLabel: UILabel!
-    
     
     private var postsCollectionRef: CollectionReference!
     private var posts = [Post]()
@@ -44,17 +33,19 @@ class NeedBeepViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //self.tableView.register(PostCell.self, forCellReuseIdentifier: "PostCell")
+        
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 80
+        tableView.estimatedRowHeight = 600
         tableView.rowHeight = UITableView.automaticDimension
         
         postsCollectionRef = Firestore.firestore().collection("posts")
     }
 
 
-    func showPostings() {
-        postsCollectionRef.getDocuments { (snapshot, error) in
+    override func viewWillAppear(_ animated: Bool) {
+        postsCollectionRef.order(by: "timePosted", descending: true).getDocuments { (snapshot, error) in
         if let err = error {
             debugPrint("Error fetching documents: \(err)")
         } else {
@@ -63,10 +54,16 @@ class NeedBeepViewController: UIViewController, UITableViewDataSource, UITableVi
                 let data = document.data()
                 let capacity = data["capacity"] as? String ?? "Anonymous"
                 let vehicleType = data["vehicleType"] as? String ?? "Anonymous"
-                let timeConstraint = data["timeConstraint"] as? String ?? "Anonymous"
+                let startTime = data["startTime"] as? String ?? "Anonymous"
+                let endTime = data["endTime"] as? String ?? "Anonymous"
+                let timeConstraint = startTime + " - " + endTime
                 let email = data["email"] as? String ?? "Anonymous"
+                let timePosted = data["timePosted"] as! String
                 
-                let newPost = Post(capacity: capacity, vehicleType: vehicleType, timeConstraint: timeConstraint, email: email)
+                //let phoneNumber = data["email"] as? String ?? "Anonymous"
+                
+                let newPost = Post(capacity: capacity, vehicleType: vehicleType, timeConstraint: timeConstraint, email: email,
+                                   timePosted: timePosted/*, phoneNumber: phoneNumber*/)
                 
                 self.posts.append(newPost)
             }
@@ -76,18 +73,8 @@ class NeedBeepViewController: UIViewController, UITableViewDataSource, UITableVi
           }
         }
     }
-        
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        //init code
-    }
     
-    func configureCell(post: Post) {
-        emailLabel.text = post.emailText
-        capacityLabel.text = post.capacityText
-        vehicleTypeLabel.text = post.vehicleTypeText
-        timeConstraintLabel.text = post.timeConstraintText
-    }
+
 }
 
 

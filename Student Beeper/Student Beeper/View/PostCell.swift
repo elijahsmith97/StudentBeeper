@@ -11,10 +11,13 @@ import UIKit
 
 class PostCell: UITableViewCell {
     
+    
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var capacityLabel: UILabel!
     @IBOutlet weak var vehicleTypeLabel: UILabel!
     @IBOutlet weak var timeConstraintLabel: UILabel!
+    
+    @IBOutlet weak var timePostedLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,5 +29,6 @@ class PostCell: UITableViewCell {
         capacityLabel.text = post.capacityText
         vehicleTypeLabel.text = post.vehicleTypeText
         timeConstraintLabel.text = post.timeConstraintText
+        timePostedLabel.text = post.timePostedText
     }
 }

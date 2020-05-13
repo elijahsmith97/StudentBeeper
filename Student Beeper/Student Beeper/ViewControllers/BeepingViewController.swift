@@ -12,21 +12,16 @@ import Firebase
 
 class BeepingViewController: UIViewController {
     let db = Firestore.firestore()
+
     
     @IBOutlet weak var postButton: UIButton!
-    
     @IBOutlet weak var userLabel: UILabel!
-    
     @IBOutlet weak var errorLabel: UILabel!
-    
     @IBOutlet weak var beepingPageLabel: UILabel!
-    
     @IBOutlet weak var vehicleTypeTextField: UITextField!
-    
     @IBOutlet weak var capacityTextField: UITextField!
-    
-    @IBOutlet weak var timeConstraintTextField: UITextField!
-    
+    @IBOutlet weak var startTimeTextField: UITextField!
+    @IBOutlet weak var endTimeTextField: UITextField!
     @IBOutlet weak var successLabel: UILabel!
     
     override func viewDidLoad() {
@@ -48,16 +43,17 @@ class BeepingViewController: UIViewController {
             let email = currentUser.email
             userLabel.text = email
         }
-        
+
     }
     
     func validateFields() -> String? {
         
         let capacity = capacityTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         let vehicle = vehicleTypeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let timeConstraint = timeConstraintTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let startTime = startTimeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        let endTime = endTimeTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        if capacity == "" || vehicle == "" || timeConstraint == "" {
+        if capacity == "" || vehicle == "" || startTime == "" || endTime == "" {
             return "Please fill in all the boxes"
         }
         
@@ -70,22 +66,28 @@ class BeepingViewController: UIViewController {
         if error != nil {
             showError(error!)
         }
+        
         let capacity = capacityTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let vehicle = vehicleTypeTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let timeConstraint = timeConstraintTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-
+        let startTime = startTimeTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let endTime = endTimeTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        let timePosted = Date().toString(dateFormat: "MMM d, h:mm a")
+        
         
         //loading user data to store UID in each specific document
         let user = Auth.auth().currentUser
+        
         if let user = user {
             //the user's ID and email that is unique to the firestore
             let email = user.email
-        
             db.collection("posts")
                 .addDocument(data: ["capacity":capacity,
                                 "vehicleType":vehicle,
-                                "timeConstraint":timeConstraint,
-                                "email":email!]) {
+                                "startTime":startTime,
+                                "endTime": endTime,
+                                "email":email!,
+                                "timePosted": timePosted]) {
                                     (error) in if error != nil {
                                    //this error message can be removed in the future to avoid showing users such error message
                                     self.showError("UID Error")
@@ -94,7 +96,6 @@ class BeepingViewController: UIViewController {
             clearText()
             showSuccess()
         }
-                                    
     }
     
     func showError(_ message:String) {
@@ -106,11 +107,23 @@ class BeepingViewController: UIViewController {
     func clearText() {
         capacityTextField.text = ""
         vehicleTypeTextField.text = ""
-        timeConstraintTextField.text = ""
+        startTimeTextField
+            .text = ""
+        endTimeTextField.text = ""
     }
     
     func showSuccess() {
         successLabel.alpha = 1
     }
     
+}
+
+extension Date
+{
+    func toString( dateFormat format  : String ) -> String
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
 }

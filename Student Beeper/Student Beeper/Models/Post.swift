@@ -13,11 +13,16 @@ class Post {
     var vehicleTypeText: String
     var timeConstraintText: String
     var emailText: String
+    var timePostedText: String
+    //var phoneNumberText: String
     
-    init(capacity: String, vehicleType: String, timeConstraint: String, email: String) {
+    init(capacity: String, vehicleType: String, timeConstraint: String, email: String, timePosted: String/*, phoneNumber: String*/) {
         capacityText = capacity
         vehicleTypeText = vehicleType
         timeConstraintText = timeConstraint
         emailText = email
+        timePostedText = timePosted
+        //phoneNumberText = phoneNumber
+        
     }
 }

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import FirebaseAuth
+import Firebase
 
 class LoginViewController: UIViewController {
 
@@ -37,7 +37,7 @@ class LoginViewController: UIViewController {
     // Check the fields and validate that the data is correct. If everything is correct, this method returns nil. Otherwise, it returns the error message
     func validateFields() -> String? {
         if emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-            return "Hey! It looks like you didn't fill in all the boxes!"
+            return "Please fill all boxes before continuing."
         }
         
         return nil
@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password) { (result, err) in
                 if err != nil {
                     // there was an error signing the user in
-                    self.showError("Oh no... I don't think those were the right credentials. Try again.")
+                    self.showError("Try your password/email combo again.")
                 }
                 else {
                     //nav to home screen
